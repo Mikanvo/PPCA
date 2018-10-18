@@ -1,0 +1,41 @@
+{% extends ':default:index.html.twig' %}
+
+{% block page_content %}
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <h1>Liste Composantes</h1>
+                {{ render(controller('ParametreBundle:Composante:new')) }}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Libelle</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for composante in composantes %}
+                        <tr>
+                            <td><a href="{{ path('admin_parametre_composante_show', { 'id': composante.id }) }}">{{ composante.id }}</a></td>
+                            <td>{{ composante.libelle }}</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('admin_parametre_composante_show', { 'id': composante.id }) }}">show</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('admin_parametre_composante_edit', { 'id': composante.id }) }}">edit</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

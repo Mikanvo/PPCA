@@ -1,0 +1,3 @@
+sise_homepage:
+    path:     /
+    defaults: { _controller: SiseBundle:Default:index }

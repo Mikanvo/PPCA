@@ -1,0 +1,7 @@
+parametre_admin_parametre_composante:
+    resource: "@ParametreBundle/Resources/config/routing/composante.yml"
+    prefix:   /admin/parametre/composante
+
+parametre_homepage:
+    path:     /
+    defaults: { _controller: ParametreBundle:Default:index }

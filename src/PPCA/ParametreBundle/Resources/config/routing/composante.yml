@@ -1,0 +1,24 @@
+admin_parametre_composante_index:
+    path:     /
+    defaults: { _controller: "ParametreBundle:Composante:index" }
+    methods:  GET
+
+admin_parametre_composante_show:
+    path:     /{id}/show
+    defaults: { _controller: "ParametreBundle:Composante:show" }
+    methods:  GET
+
+admin_parametre_composante_new:
+    path:     /new
+    defaults: { _controller: "ParametreBundle:Composante:new" }
+    methods:  [GET, POST]
+
+admin_parametre_composante_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ParametreBundle:Composante:edit" }
+    methods:  [GET, POST]
+
+admin_parametre_composante_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ParametreBundle:Composante:delete" }
+    methods:  DELETE

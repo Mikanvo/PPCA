@@ -1,0 +1,19 @@
+sise:
+    resource: "@SiseBundle/Resources/config/routing.yml"
+    prefix:   /sise/
+
+archivage:
+    resource: "@ArchivageBundle/Resources/config/routing.yml"
+    prefix:   /archivage/
+
+utilisateur:
+    resource: "@UtilisateurBundle/Resources/config/routing.yml"
+    prefix:   /utilisateur/
+
+parametre:
+    resource: "@ParametreBundle/Resources/config/routing.yml"
+    prefix:   /parametre/
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

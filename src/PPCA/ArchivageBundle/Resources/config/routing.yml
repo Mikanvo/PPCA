@@ -1,0 +1,3 @@
+archivage_homepage:
+    path:     /
+    defaults: { _controller: ArchivageBundle:Default:index }
