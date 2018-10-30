@@ -1,7 +1,7 @@
 admin_parametre_composante_index:
     path:     /
     defaults: { _controller: "ParametreBundle:Composante:index" }
-    methods:  GET
+    methods:  [GET, POST]
 
 admin_parametre_composante_show:
     path:     /{id}/show

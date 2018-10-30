@@ -35,14 +35,16 @@
 {% endblock radio_widget %}#}
 
 {%- block choice_widget_collapsed -%}
-    {%- if required and empty_value is none and not empty_value_in_choices and not multiple -%}
+{#
+    {%- if required and empty_data is none and not empty_value_in_choices and not multiple -%}
         {% set required = false %}
     {%- endif -%}
+#}
 
     <select class="form-control {% if multiple %} select2_multiple {% else %} select2_single {% endif %} {% if attr %}{% for attrname, attrvalue in attr %}{% if attrname == 'class' %}{{attrvalue}}{% endif %}{% endfor %}{% endif %}" {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
-        {%- if empty_value is not none -%}
-            <option value=""{% if required and value is empty %} selected="selected"{% endif %}>{{ empty_value != '' ? empty_value|trans({}, translation_domain) }}</option>
-        {%- endif -%}
+        {#{%- if empty_data is not none -%}
+            <option value=""{% if required and value is empty %} selected="selected"{% endif %}>{{ empty_data != '' ? empty_data|trans({}, translation_domain) }}</option>
+        {%- endif -%}#}
         {%- if preferred_choices|length > 0 -%}
             {% set options = preferred_choices %}
             {{- block('choice_widget_options') -}}

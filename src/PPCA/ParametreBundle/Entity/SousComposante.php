@@ -3,12 +3,15 @@
 namespace PPCA\ParametreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use APY\DataGridBundle\Grid\Mapping as GRID;
 
 /**
  * SousComposante
  *
  * @ORM\Table(name="sous_composante")
  * @ORM\Entity(repositoryClass="PPCA\ParametreBundle\Repository\SousComposanteRepository")
+ * @GRID\Source(columns="id, libelle, composante.libelle")
  */
 class SousComposante
 {
@@ -18,20 +21,23 @@ class SousComposante
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @GRID\Column(name="id", title="ID", operatorsVisible=false, filterable=false)
      */
     private $id;
 
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="libelle", type="string", length=50)
      */
     private $libelle;
 
     /**
-     * @var \stdClass
      *
-     * @ORM\Column(name="composante", type="object")
+     * @Assert\NotBlank()
+     * @ORM\ManyToOne(targetEntity="Composante")
+     * @GRID\Column(field="composante.libelle", title="Composante")
      */
     private $composante;
 
@@ -39,7 +45,7 @@ class SousComposante
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -73,11 +79,11 @@ class SousComposante
     /**
      * Set composante
      *
-     * @param \stdClass $composante
+     * @param \PPCA\ParametreBundle\Entity\Composante $composante
      *
      * @return SousComposante
      */
-    public function setComposante($composante)
+    public function setComposante(\PPCA\ParametreBundle\Entity\Composante $composante = null)
     {
         $this->composante = $composante;
 
@@ -87,11 +93,10 @@ class SousComposante
     /**
      * Get composante
      *
-     * @return \stdClass
+     * @return \PPCA\ParametreBundle\Entity\Composante
      */
     public function getComposante()
     {
         return $this->composante;
     }
 }
-

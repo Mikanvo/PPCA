@@ -18,9 +18,15 @@
 {% block method_body %}
         ${{ entity_singularized }} = new {{ entity_singularized|capitalize }}();
         {% if use_form_type_instance -%}
-            $form = $this->createForm(new {{ entity_singularized|capitalize }}Type(), ${{ entity_singularized }});
+            $form = $this->createForm(new {{ entity_singularized|capitalize }}Type(), ${{ entity_singularized }}, array(
+                'action' => $this->generateUrl('{{ route_name_prefix }}_new'),
+                'method' => 'POST',
+            ));
         {% else -%}
-            $form = $this->createForm('{{ namespace }}\Form\{{ entity }}Type', ${{ entity_singularized }});
+            $form = $this->createForm('{{ namespace }}\Form\{{ entity }}Type', ${{ entity_singularized }}, array(
+                'action' => $this->generateUrl('{{ route_name_prefix }}_new'),
+                'method' => 'POST',
+            ));
         {% endif -%}
         $form->handleRequest($request);
 
@@ -29,7 +35,7 @@
             $em->persist(${{ entity_singularized }});
             $em->flush();
 
-            return $this->redirectToRoute('{{ route_name_prefix }}_index'));
+            return $this->redirectToRoute('{{ route_name_prefix }}_index');
 
         }
 {% endblock method_body %}

@@ -21,6 +21,9 @@ class AppKernel extends Kernel
             new PPCA\UtilisateurBundle\UtilisateurBundle(),
             new PPCA\ArchivageBundle\ArchivageBundle(),
             new PPCA\SiseBundle\SiseBundle(),
+            new APY\DataGridBundle\APYDataGridBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new SecIT\ImapBundle\ImapBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

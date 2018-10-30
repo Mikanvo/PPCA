@@ -1,0 +1,33 @@
+    {% block page_content %}
+    {% form_theme edit_form ':widget:fields.html.twig' %}
+    <a class="btn red btn-outline sbold" data-toggle="modal" href="#edit{{ entity_singularized.id }}"> Modifier </a>
+    <div class="modal fade" id="edit{{ entity_singularized.id }}" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Modification Fonction </h4>
+                </div>
+                {{ form_start(edit_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}
+                <div class="modal-body">
+                    {{ form_widget(edit_form) }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn blue">Modifier</button>
+                                            <ul>
+        <li>
+            <a href="{{ path('admin_utilisateur_etat_index') }}">Retour à la grille</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Supprimer">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+</div>
+                {{ form_end(edit_form) }}
+            </div>
+        </div>
+    </div>
+    {% endblock %}

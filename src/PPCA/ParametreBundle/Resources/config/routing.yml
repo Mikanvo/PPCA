@@ -1,6 +1,22 @@
+parametre_admin_parametre_bailleur:
+    resource: "@ParametreBundle/Resources/config/routing/bailleur.yml"
+    prefix:   /admin/parametre/bailleur
+
+parametre_admin_parametre_sousactivite:
+    resource: "@ParametreBundle/Resources/config/routing/sousactivite.yml"
+    prefix:   /admin/parametre/sousactivite
+
+parametre_admin_parametre_activite:
+    resource: "@ParametreBundle/Resources/config/routing/activite.yml"
+    prefix:   /admin/parametre/activite
+
 parametre_admin_parametre_composante:
     resource: "@ParametreBundle/Resources/config/routing/composante.yml"
     prefix:   /admin/parametre/composante
+
+parametre_admin_parametre_souscomposante:
+    resource: "@ParametreBundle/Resources/config/routing/souscomposante.yml"
+    prefix:   /admin/parametre/souscomposante
 
 parametre_homepage:
     path:     /

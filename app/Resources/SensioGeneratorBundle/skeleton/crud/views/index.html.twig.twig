@@ -1,95 +1,42 @@
 {% block extends %}
-{{ "{% extends 'default:index.html.twig' %}" }}
+{{ "{% extends ':default:index.html.twig' %}" }}
 {% endblock extends %}
 
 {% block page_content %}
     {{ "{% block page_content %}" }}
-<div class="row">
-    <div class="col-md-12 col-sm-12">
-        <div class="portlet light ">
-            <div class="portlet-title">
-                <h1>Liste {{ entity_pluralized|capitalize }}</h1>
-                <table>
-                    <thead>
-                        <tr>
-                        {%- for field, metadata in fields %}
-
-                            <th>{{ field|capitalize }}</th>
-
-                        {%- endfor %}
-
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {{ '{% for ' ~ entity_singularized ~ ' in ' ~ entity_pluralized ~ ' %}' }}
-                        <tr>
-
-                    {%- for field, metadata in fields %}
-                        {%- if loop.first and ('show' in actions) %}
-
-                            <td><a href="{{ "{{ path('" ~ route_name_prefix ~ "_show', { '"~ identifier ~"': " ~ entity_singularized ~ "."~ identifier ~" }) }}" }}">{{ '{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' }}' }}</a></td>
-
-                        {%- elseif metadata.type in ['datetime'] %}
-
-                            <td>{{ '{% if ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' %}{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ '|date(\'Y-m-d H:i:s\') }}{% endif %}' }}</td>
-
-                        {%- elseif metadata.type in ['date'] %}
-
-                            <td>{{ '{% if ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' %}{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ '|date(\'Y-m-d\') }}{% endif %}' }}</td>
-
-                        {%- elseif metadata.type in ['time'] %}
-
-                            <td>{{ '{% if ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' %}{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ '|date(\'H:i:s\') }}{% endif %}' }}</td>
-
-                        {%- elseif metadata.type in ['array'] %}
-
-                            <td>{{ '{% if ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' %}{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ '|join(\', \') }}{% endif %}' }}</td>
-
-                        {%- elseif metadata.type in ['boolean'] %}
-
-                            <td>{{ '{% if ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' %}Yes{% else %}No{% endif %}' }}</td>
-
-                        {%- else %}
-
-                            <td>{{ '{{ ' ~ entity_singularized ~ '.' ~ field|replace({'_': ''}) ~ ' }}' }}</td>
-
-                        {%- endif %}
-
-                        {%- if loop.last %}
-
-                            <td>
-                                <ul>
-
-                                {%- for action in record_actions %}
-
-                                    <li>
-                                        <a href="{{ "{{ path('" ~ route_name_prefix ~ "_" ~ action ~ "', { '"~ identifier ~"': " ~ entity_singularized ~ "."~ identifier ~" }) }}" }}">{{ action }}</a>
-                                    </li>
-
-                                {%- endfor %}
-
-                                </ul>
-                            </td>
-
-                        {%- endif %}
-                    {%- endfor %}
-
-                        </tr>
-                    {{ '{% endfor %}' }}
-                    </tbody>
-                </table>
-
-                {% if 'new' in actions -%}
-                <ul>
-                    <li>
-                        <a href="{{ "{{ path('" ~ route_name_prefix ~ "_new') }}" }}">Ajouter {{ entity_singularized }}</a>
-                    </li>
-                </ul>
-                {%- endif %}
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="portlet light ">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-settings font-dark"></i>
+                        <span class="caption-subject font-dark sbold uppercase">Liste des {{ entity_pluralized|capitalize }}</span>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group btn-group-devided" data-toggle="buttons">
+                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                                <input type="radio" name="options" class="toggle" id="option1">Actions</label>
+                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                                <input type="radio" name="options" class="toggle" id="option2">Settings</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="table-toolbar">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="btn-group">
+                                    {% if 'new' in actions -%}
+                                        {{ "{{ render(controller('"}}{{ bundle }}:{{ entity }}{{ ":new')) }}" }}
+                                    {%- endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ "{{ grid(grid) }}" }}
+                </div>
             </div>
         </div>
     </div>
-</div>
-{{ "{% endblock %}" }}
+    {{ "{% endblock %}" }}
 {% endblock %}

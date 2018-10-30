@@ -1,0 +1,24 @@
+admin_sise_requete_index:
+    path:     /
+    defaults: { _controller: "SiseBundle:Requete:index" }
+    methods:  GET
+
+admin_sise_requete_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiseBundle:Requete:show" }
+    methods:  GET
+
+admin_sise_requete_new:
+    path:     /new
+    defaults: { _controller: "SiseBundle:Requete:new" }
+    methods:  [GET, POST]
+
+admin_sise_requete_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiseBundle:Requete:edit" }
+    methods:  [GET, POST]
+
+admin_sise_requete_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiseBundle:Requete:delete" }
+    methods:  DELETE

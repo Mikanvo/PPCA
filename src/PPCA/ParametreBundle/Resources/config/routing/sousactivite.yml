@@ -1,0 +1,24 @@
+admin_parametre_sousactivite_index:
+    path:     /
+    defaults: { _controller: "ParametreBundle:SousActivite:index" }
+    methods:  GET
+
+admin_parametre_sousactivite_show:
+    path:     /{id}/show
+    defaults: { _controller: "ParametreBundle:SousActivite:show" }
+    methods:  GET
+
+admin_parametre_sousactivite_new:
+    path:     /new
+    defaults: { _controller: "ParametreBundle:SousActivite:new" }
+    methods:  [GET, POST]
+
+admin_parametre_sousactivite_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ParametreBundle:SousActivite:edit" }
+    methods:  [GET, POST]
+
+admin_parametre_sousactivite_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ParametreBundle:SousActivite:delete" }
+    methods:  DELETE

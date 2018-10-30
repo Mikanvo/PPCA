@@ -1,47 +1,25 @@
-{% block extends %}
-{{ "{% extends 'default:index.html.twig' %}" }}
-{% endblock extends %}
-
 {% block page_content %}
     {{ "{% block page_content %}" }}
     {{ "{% form_theme show_form ':widget:fields.html.twig' %}" }}
-    <div class="row">
-        <div class="col-md-12 col-sm-12">
-            <div class="portlet light ">
-                <div class="portlet-title">
-                    <div class="caption">
-                        <i class="icon-settings font-dark"></i>
-                        <span class="caption-subject font-dark sbold uppercase">Details {{ entity_singularized|capitalize }}</span>
-                    </div>
-                    <div class="actions">
-                        <div class="btn-group btn-group-devided" data-toggle="buttons">
-                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
-                                <input type="radio" name="options" class="toggle" id="option1">Actions</label>
-                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
-                                <input type="radio" name="options" class="toggle" id="option2">Settings</label>
-                        </div>
-                    </div>
+    <a class="btn red btn-outline sbold" data-toggle="modal" href="#show{{ entity_singularized }}.id">Voir </a>
+    <div class="modal fade" id="show{{ entity_singularized }}.id" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Détails {{ entity_singularized|capitalize }} </h4>
                 </div>
-                <div class="portlet-body form">
-                    {{ "{{ form_start(show_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}" }}
-                        <div class="form-body">
-                            {{ '{{ form_widget(show_form) }}' }}
-                        </div>
-                        <div class="form-actions">
-                            <div class="row">
-                                <div class="col-md-offset-3 col-md-9">
-                                    <input type="button" value="Annuler" />
-                                </div>
-                            </div>
-                        </div>
-
-                            {{ '{{ form_end(show_form) }}' }}
+                {{ "{{ form_start(show_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}" }}
+                <div class="modal-body">
+                    {{ "{{ form_widget(show_form) }}" }}
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Fermer</button>
+                    <!--<button type="button" class="btn green">Save changes</button>-->
+                </div>
+                {{ "{{ form_end(show_form) }}" }}
             </div>
         </div>
     </div>
-
-{% set hide_edit, hide_delete = false, false %}
-{{ include('crud/views/others/record_actions.html.twig.twig') -}}
-{{ "{% endblock %}" }}
+    {{ "{% endblock %}" }}
 {% endblock %}

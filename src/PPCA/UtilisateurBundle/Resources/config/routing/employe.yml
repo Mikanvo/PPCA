@@ -1,0 +1,24 @@
+admin_utilisateur_employe_index:
+    path:     /
+    defaults: { _controller: "UtilisateurBundle:Employe:index" }
+    methods:  GET
+
+admin_utilisateur_employe_show:
+    path:     /{id}/show
+    defaults: { _controller: "UtilisateurBundle:Employe:show" }
+    methods:  GET
+
+admin_utilisateur_employe_new:
+    path:     /new
+    defaults: { _controller: "UtilisateurBundle:Employe:new" }
+    methods:  [GET, POST]
+
+admin_utilisateur_employe_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UtilisateurBundle:Employe:edit" }
+    methods:  [GET, POST]
+
+admin_utilisateur_employe_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UtilisateurBundle:Employe:delete" }
+    methods:  DELETE

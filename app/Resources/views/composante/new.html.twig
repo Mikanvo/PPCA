@@ -1,6 +1,6 @@
 {% block page_content %}
     {% form_theme form ':widget:fields.html.twig' %}
-    <a class="btn red btn-outline sbold" data-toggle="modal" href="#basic"> Ajouter Composante </a>
+    <a class="btn green sbold" data-toggle="modal" href="#basic"> Ajouter </a>
     <div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -15,14 +15,13 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <!--<button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn green
-                        ">Save changes</button>-->
-                        <input type="submit" class="btn blue" value="Créer" />
+                        <button type="button" class="btn dark btn-outline" data-dismiss="modal">Annuler</button>
+                        <!--<button type="button" class="btn green">Save changes</button>
+                        <input type="submit" class="btn blue" value="Créer" />-->
+                        <button type="submit" class="btn blue">Créer</button>
                     </div>
 
                 {{ form_end(form) }}
-                </div>
             </div>
         </div>
     </div>

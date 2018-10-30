@@ -1,0 +1,33 @@
+.pager {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.pager .current {
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 34px;
+    position: relative;
+    text-align: center;
+    top: 2px;
+}
+.grid-row-actions {
+    margin-bottom: 0;
+}
+.pager .next, .pager .prev, .grid-row-actions .btn {
+    border-radius: 0;
+    /*background-color: #eee;
+    border-color: #ddd;
+    color: #23527c;
+    height: 28px;*/
+}
+.pager select {
+    border: 1px solid #ddd;
+    height: 28px;
+}
+
+.grid .table {
+    width: 100%!important;
+    margin: 0!important;
+    background-color: #fff;
+}

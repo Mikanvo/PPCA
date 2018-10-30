@@ -18,16 +18,22 @@
 {% block method_body %}
         $deleteForm = $this->createDeleteForm(${{ entity_singularized }});
         {% if use_form_type_instance -%}
-            $editForm = $this->createForm(new {{ entity_singularized|capitalize }}Type(), ${{ entity_singularized }});
+            $editForm = $this->createForm(new {{ entity_singularized|capitalize }}Type(), ${{ entity_singularized }}, array(
+                'action' => $this->generateUrl('{{ route_name_prefix }}_edit', array('id' => {{ entity_singularized }}->getId())),
+                'method' => 'POST',
+            ));
         {% else -%}
-            $editForm = $this->createForm('{{ namespace }}\Form\{{ entity }}Type', ${{ entity_singularized }});
+            $editForm = $this->createForm('{{ namespace }}\Form\{{ entity }}Type', ${{ entity_singularized }}, array(
+                'action' => $this->generateUrl('{{ route_name_prefix }}_edit', array('id' => {{ entity_singularized }}->getId())),
+                'method' => 'POST',
+            ));
         {% endif -%}
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('{{ route_name_prefix }}_edit', array('{{ identifier }}' => ${{ entity_singularized }}->get{{ identifier|capitalize }}()));
+            return $this->redirectToRoute('{{ route_name_prefix }}_index', array('{{ identifier }}' => ${{ entity_singularized }}->get{{ identifier|capitalize }}()));
         }
 {% endblock method_body %}
 

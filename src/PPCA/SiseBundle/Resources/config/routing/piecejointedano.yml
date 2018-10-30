@@ -1,0 +1,24 @@
+admin_sise_piecejointedano_index:
+    path:     /
+    defaults: { _controller: "SiseBundle:PieceJointeDano:index" }
+    methods:  GET
+
+admin_sise_piecejointedano_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiseBundle:PieceJointeDano:show" }
+    methods:  GET
+
+admin_sise_piecejointedano_new:
+    path:     /new
+    defaults: { _controller: "SiseBundle:PieceJointeDano:new" }
+    methods:  [GET, POST]
+
+admin_sise_piecejointedano_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiseBundle:PieceJointeDano:edit" }
+    methods:  [GET, POST]
+
+admin_sise_piecejointedano_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiseBundle:PieceJointeDano:delete" }
+    methods:  DELETE

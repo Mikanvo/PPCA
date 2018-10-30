@@ -11,18 +11,34 @@
 {% endblock phpdoc_method_annotations %}
      */
 {% block method_definition %}
-    public function indexAction()
+    public function indexAction(Request $request)
 {% endblock method_definition %}
     {
 {% block method_body %}
-        $em = $this->getDoctrine()->getManager();
 
-        ${{ entity_pluralized }} = $em->getRepository('{{ bundle }}:{{ entity }}')->findAll();
+        $source = new Entity('{{ bundle }}:{{ entity }}');
+
+        $grid = $this->get('grid');
+
+        $grid->setSource($source);
+
+
+        $rowAction = new RowAction('Détails', '{{ route_name_prefix }}_show');
+        $rowAction->addManipulateRender(function ($action, $row)  {
+            return ['controller' => '{{ bundle }}:{{ entity }}:show', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);
+
+        $rowAction = new RowAction('Modifier', '{{ route_name_prefix }}_edit');
+        $rowAction->addManipulateRender(function ($action, $row)  {
+            return ['controller' => '{{ bundle }}:{{ entity }}:edit', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);
+
+
 {% endblock method_body %}
 
 {% block method_return %}
-        return $this->render('{{ entity|lower|replace({'\\': '/'}) }}/index.html.twig', array(
-            '{{ entity_pluralized }}' => ${{ entity_pluralized }},
-        ));
+        return $grid->getGridResponse('{{ entity|lower }}/index.html.twig');
 {% endblock method_return %}
     }

@@ -2,13 +2,13 @@
 {% block form_widget_simple %}
 {% spaceless %}
         {% set type = type|default('text') %}
-        <input class="form-control col-md-7 col-xs-12 {% if attr %}{% for attrname, attrvalue in attr %}{% if attrname == 'class' %}{{attrvalue}}{% endif %}{% endfor %}{% endif %}" type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+        <input class="form-control {% if attr %}{% for attrname, attrvalue in attr %}{% if attrname == 'class' %}{{attrvalue}}{% endif %}{% endfor %}{% endif %}" type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
 {% endspaceless %}
 {% endblock form_widget_simple %}
 
 {% block textarea_widget %}
 {% spaceless %}
-        <textarea class="form-control col-md-7 col-xs-12" class="form-control" {{ block('widget_attributes') }}>{{ value }}</textarea>
+        <textarea class="form-control" {{ block('widget_attributes') }}>{{ value }}</textarea>
 {% endspaceless %}
 {% endblock textarea_widget %}
 
@@ -19,13 +19,13 @@
 {% endblock checkbox_widget %}
 
 {%- block choice_widget_collapsed -%}
-    {%- if required and empty_value is none and not empty_value_in_choices and not multiple -%}
+    {#{%- if required and empty_value is none and not empty_value_in_choices and not multiple -%}
         {% set required = false %}
-    {%- endif -%}
+    {%- endif -%}#}
     <select class="form-control {% if multiple %} select2_multiple {% else %} select2_single {% endif %}{% if attr %}{% for attrname, attrvalue in attr %}{% if attrname == 'class' %}{{attrvalue}}{% endif %}{% endfor %}{% endif %}" {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
-        {%- if empty_value is not none -%}
+        {#{%- if empty_value is not none -%}
             <option value=""{% if required and value is empty %} selected="selected"{% endif %}>{{ empty_value != '' ? empty_value|trans({}, translation_domain) }}</option>
-        {%- endif -%}
+        {%- endif -%}#}
         {%- if preferred_choices|length > 0 -%}
             {% set options = preferred_choices %}
             {{- block('choice_widget_options') -}}
@@ -107,10 +107,10 @@
 {# Rows #}
 
 {%- block form_row -%}
-    <div class="col-md-6"><!---->
+    <div class="form-group"><!---->
         {{- form_label(form) -}}
         {{- form_errors(form) -}}
-		<div class="col-md-9 col-sm-9 col-xs-12">
+		<div class="col-md-4">
         	{{- form_widget(form) -}}
         </div>
     </div><!---->

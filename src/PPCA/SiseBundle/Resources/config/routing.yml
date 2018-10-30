@@ -1,3 +1,23 @@
+sise_admin_sise_piecejointedano:
+    resource: "@SiseBundle/Resources/config/routing/piecejointedano.yml"
+    prefix:   /admin/sise/piecejointedano
+
+sise_admin_sise_etat:
+    resource: "@SiseBundle/Resources/config/routing/etat.yml"
+    prefix:   /admin/sise/etat
+
+sise_admin_sise_requete:
+     resource: "@SiseBundle/Resources/config/routing/requete.yml"
+     prefix:   /admin/sise/requete
+
+sise_admin_sise_mail:
+    resource: "@SiseBundle/Resources/config/routing/mail.yml"
+    prefix:   /admin/sise/mail
+
+sise_admin_sise_dano:
+    resource: "@SiseBundle/Resources/config/routing/dano.yml"
+    prefix:   /admin/sise/dano
+
 sise_homepage:
     path:     /
     defaults: { _controller: SiseBundle:Default:index }

@@ -1,12 +1,12 @@
     <ul>
         <li>
-            <a href="{{ "{{ path('" ~ route_name_prefix ~ "_index') }}" }}">Back to the list</a>
+            <a href="{{ "{{ path('" ~ route_name_prefix ~ "_index') }}" }}">Retour à la grille</a>
         </li>
 
         {%- if ('edit' in actions) and (not hide_edit) %}
 
         <li>
-            <a href="{{ "{{ path('" ~ route_name_prefix ~ "_edit', { '"~ identifier ~"': " ~ entity_singularized ~ "."~ identifier ~" }) }}" }}">Edit</a>
+            <a href="{{ "{{ path('" ~ route_name_prefix ~ "_edit', { '"~ identifier ~"': " ~ entity_singularized ~ "."~ identifier ~" }) }}" }}">Modifie</a>
         </li>
 
         {%- endif %}
@@ -15,7 +15,7 @@
 
         <li>
             {{ '{{ form_start(delete_form) }}' }}
-                <input type="submit" value="Delete">
+                <input type="submit" value="Supprimer">
             {{ '{{ form_end(delete_form) }}' }}
         </li>
 

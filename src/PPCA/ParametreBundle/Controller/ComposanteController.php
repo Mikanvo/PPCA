@@ -5,6 +5,9 @@ namespace PPCA\ParametreBundle\Controller;
 use PPCA\ParametreBundle\Entity\Composante;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use APY\DataGridBundle\Grid\Source\Entity;
+use APY\DataGridBundle\Grid\Action\RowAction;
+
 
 /**
  * Composante controller.
@@ -16,15 +19,38 @@ class ComposanteController extends Controller
      * Lists all composante entities.
      *
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
+        $grid = $this->get('grid');
 
-        $composantes = $em->getRepository('ParametreBundle:Composante')->findAll();
+        $source = new Entity('ParametreBundle:Composante');
 
-        return $this->render('composante/index.html.twig', array(
-            'composantes' => $composantes,
-        ));
+        $grid->setSource($source);
+
+        $rowAction = new RowAction('Détails', 'admin_parametre_composante_show');
+        $rowAction->addManipulateRender(function ($action, $row)  {
+            return ['controller' => 'ParametreBundle:Composante:show', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);
+
+        $rowAction = new RowAction('Modifier', 'admin_parametre_composante_edit');
+        $rowAction->addManipulateRender(function ($action, $row)  {
+            return ['controller' => 'ParametreBundle:Composante:edit', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);
+
+        /*$rowAction = new RowAction('Supprimer', 'admin_parametre_composante_delete');
+        $rowAction->manipulateRender(function ($action, $row)  {
+            return ['controller' => 'ParametreBundle:Composante:delete', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);*/
+
+        // Set the selector of the number of items per page
+        $grid->setLimits(array(10, 15, 20));
+
+
+
+        return $grid->getGridResponse('composante/index.html.twig');
     }
 
     /**
@@ -34,7 +60,10 @@ class ComposanteController extends Controller
     public function newAction(Request $request)
     {
         $composante = new Composante();
-        $form = $this->createForm('PPCA\ParametreBundle\Form\ComposanteType', $composante);
+        $form = $this->createForm('PPCA\ParametreBundle\Form\ComposanteType', $composante, array(
+            'action' => $this->generateUrl('admin_parametre_composante_new'),
+            'method' => 'POST',
+        ));
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -76,13 +105,16 @@ class ComposanteController extends Controller
     public function editAction(Request $request, Composante $composante)
     {
         $deleteForm = $this->createDeleteForm($composante);
-        $editForm = $this->createForm('PPCA\ParametreBundle\Form\ComposanteType', $composante);
+        $editForm = $this->createForm('PPCA\ParametreBundle\Form\ComposanteType', $composante, array(
+            'action' => $this->generateUrl('admin_parametre_composante_edit', array('id' => $composante->getId())),
+            'method' => 'POST',
+        ));
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('admin_parametre_composante_edit', array('id' => $composante->getId()));
+            return $this->redirectToRoute('admin_parametre_composante_index');
         }
 
         return $this->render('composante/edit.html.twig', array(

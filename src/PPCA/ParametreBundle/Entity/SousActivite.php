@@ -3,12 +3,16 @@
 namespace PPCA\ParametreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use APY\DataGridBundle\Grid\Mapping as GRID;
+
 
 /**
  * SousActivite
  *
  * @ORM\Table(name="sous_activite")
  * @ORM\Entity(repositoryClass="PPCA\ParametreBundle\Repository\SousActiviteRepository")
+ * @GRID\Source(columns="id, libelle, activite.libelle")
  */
 class SousActivite
 {
@@ -18,20 +22,23 @@ class SousActivite
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @GRID\Column(name="id", title="ID", operatorsVisible=false, filterable=false)
      */
     private $id;
 
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="libelle", type="string", length=50)
      */
     private $libelle;
 
     /**
-     * @var \stdClass
      *
-     * @ORM\Column(name="activite", type="object")
+     * @Assert\NotBlank()
+     * @ORM\ManyToOne(targetEntity="Activite")
+     * @GRID\Column(field="activite.libelle", title="Activite")
      */
     private $activite;
 
@@ -39,7 +46,7 @@ class SousActivite
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -73,11 +80,11 @@ class SousActivite
     /**
      * Set activite
      *
-     * @param \stdClass $activite
+     * @param \PPCA\ParametreBundle\Entity\Activite $activite
      *
      * @return SousActivite
      */
-    public function setActivite($activite)
+    public function setActivite(\PPCA\ParametreBundle\Entity\Activite $activite = null)
     {
         $this->activite = $activite;
 
@@ -87,11 +94,10 @@ class SousActivite
     /**
      * Get activite
      *
-     * @return \stdClass
+     * @return \PPCA\ParametreBundle\Entity\Activite
      */
     public function getActivite()
     {
         return $this->activite;
     }
 }
-

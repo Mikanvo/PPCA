@@ -1,0 +1,167 @@
+<!-- BEGIN HEADER MENU -->
+<div class="page-header-menu">
+    <div class="container">
+        <!-- BEGIN HEADER SEARCH BOX -->
+        <form class="search-form" action="page_general_search.html" method="GET">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="query">
+                <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+            </div>
+        </form>
+        <!-- END HEADER SEARCH BOX -->
+        <!-- BEGIN MEGA MENU -->
+        <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+        <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+
+        <div class="hor-menu  ">
+            {% block menu %}
+                <ul class="nav navbar-nav">
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a href="javascript:;"> Parametre
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li class=" active">
+                                <a href="{{ path('admin_parametre_composante_index') }}" class="nav-link  active">
+                                    <i class="icon-bar-chart"></i> Composante
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_parametre_souscomposante_index') }}" class="nav-link">
+                                    <i class="icon-bar-chart"></i> Sous Composante
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_parametre_activite_index') }}" class="nav-link">
+                                    <i class="icon-bar-chart"></i> Activité
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_parametre_sousactivite_index') }}" class="nav-link">
+                                    <i class="icon-bar-chart"></i> Sous Activité
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown mega-menu-dropdown  ">
+                        <a href="javascript:;"> Utilisateur
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="min-width: 710px">
+                            <li>
+                                <div class="mega-menu-content">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <a href="{{ path('admin_utilisateur_fonction_index') }}"> Fonction </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <a href="{{ path('admin_utilisateur_employe_index') }}"> Employé </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <a href="{{ path('admin_utilisateur_groupe_index') }}"> Groupe </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <a href="{{ path('admin_utilisateur_utilisateur_index') }}"> Utilisateur </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown classic-menu-dropdown ">
+                        <a href="javascript:;"> Archivage
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li class=" ">
+                                <a href="layout_mega_menu_light.html" class="nav-link  "> Light Mega Menu </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
+                        <a href="javascript:;"> Gestion du projet
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="min-width: ">
+                            <li>
+                                <div class="mega-menu-content">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3>PARAMETRES</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('admin_parametre_bailleur_index') }}"> Bailleur </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('admin_sise_requete_index') }}"> Requete </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('admin_sise_etat_index') }}"> Etat </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3>DANO</h3>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('admin_sise_dano_index') }}"> Dano </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ path('admin_sise_mail_index') }}"> Mail </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3>TITRE</h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="mega-menu-submenu">
+                                                <li>
+                                                    <h3>TITRE</h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            {% endblock %}
+        </div>
+        <!-- END MEGA MENU -->
+    </div>
+</div>
+<!-- END HEADER MENU -->

@@ -2,46 +2,66 @@
 
 namespace PPCA\SiseBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use APY\DataGridBundle\Grid\Mapping as GRID;
+
 /**
  * Mail
+ *
+ * @ORM\Table(name="mail")
+ * @ORM\Entity(repositoryClass="PPCA\SiseBundle\Repository\MailRepository")
  */
 class Mail
 {
     /**
      * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="objet", type="string", length=255)
      */
     private $objet;
 
     /**
-     * @var \stdClass
+     * @ORM\ManyToOne(targetEntity="Dano")
+     * @GRID\Column(field="dano.objet", title="Dano")
      */
     private $dano;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="corps", type="text")
      */
     private $corps;
 
     /**
      * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="date")
      */
     private $date;
 
     /**
-     * @var \stdClass
+     * @ORM\Column(name="expediteur", type="text")
+     * @GRID\Column(field="expediteur", title="Expediteur")
      */
     private $expediteur;
+
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -70,30 +90,6 @@ class Mail
     public function getObjet()
     {
         return $this->objet;
-    }
-
-    /**
-     * Set dano
-     *
-     * @param \stdClass $dano
-     *
-     * @return Mail
-     */
-    public function setDano($dano)
-    {
-        $this->dano = $dano;
-
-        return $this;
-    }
-
-    /**
-     * Get dano
-     *
-     * @return \stdClass
-     */
-    public function getDano()
-    {
-        return $this->dano;
     }
 
     /**
@@ -145,9 +141,34 @@ class Mail
     }
 
     /**
+     * Set dano
+     *
+     * @param \PPCA\SiseBundle\Entity\Dano $dano
+     *
+     * @return Mail
+     */
+    public function setDano(\PPCA\SiseBundle\Entity\Dano $dano = null)
+    {
+        $this->dano = $dano;
+
+        return $this;
+    }
+
+    /**
+     * Get dano
+     *
+     * @return \PPCA\SiseBundle\Entity\Dano
+     */
+    public function getDano()
+    {
+        return $this->dano;
+    }
+
+
+    /**
      * Set expediteur
      *
-     * @param \stdClass $expediteur
+     * @param string $expediteur
      *
      * @return Mail
      */
@@ -161,11 +182,10 @@ class Mail
     /**
      * Get expediteur
      *
-     * @return \stdClass
+     * @return string
      */
     public function getExpediteur()
     {
         return $this->expediteur;
     }
 }
-

@@ -1,0 +1,24 @@
+admin_sise_etat_index:
+    path:     /
+    defaults: { _controller: "SiseBundle:Etat:index" }
+    methods:  GET
+
+admin_sise_etat_show:
+    path:     /{id}/show
+    defaults: { _controller: "SiseBundle:Etat:show" }
+    methods:  GET
+
+admin_sise_etat_new:
+    path:     /new
+    defaults: { _controller: "SiseBundle:Etat:new" }
+    methods:  [GET, POST]
+
+admin_sise_etat_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SiseBundle:Etat:edit" }
+    methods:  [GET, POST]
+
+admin_sise_etat_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SiseBundle:Etat:delete" }
+    methods:  DELETE

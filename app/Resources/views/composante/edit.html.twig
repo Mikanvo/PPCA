@@ -1,51 +1,24 @@
-{% extends ':default:index.html.twig' %}
-
 {% block page_content %}
     {% form_theme edit_form ':widget:fields.html.twig' %}
-    <div class="row">
-        <div class="col-md-12 col-sm-12">
-            <div class="portlet light ">
-                <div class="portlet-title">
-                    <div class="caption">
-                        <i class="icon-settings font-dark"></i>
-                        <span class="caption-subject font-dark sbold uppercase">Modification Composante</span>
-                    </div>
-                    <div class="actions">
-                        <div class="btn-group btn-group-devided" data-toggle="buttons">
-                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
-                                <input type="radio" name="options" class="toggle" id="option1">Actions</label>
-                            <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
-                                <input type="radio" name="options" class="toggle" id="option2">Settings</label>
-                        </div>
-                    </div>
+    <a class="btn yellow-gold sbold" data-toggle="modal" href="#edit{{ composante.id }}"> Modifier </a>
+    <div class="modal fade" id="edit{{ composante.id }}" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Modification Composante </h4>
                 </div>
-                <div class="portlet-body form">
-                    {{ form_start(edit_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}
-                        <div class="form-body">
+                {{ form_start(edit_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}
+                        <div class="modal-body">
                             {{ form_widget(edit_form) }}
                         </div>
-                        <div class="form-actions">
-                            <div class="row">
-                                <div class="col-md-offset-3 col-md-9">
-                                    <input type="submit" value="Modifier" />
-                                </div>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn dark btn-outline" data-dismiss="modal">Annuler</button>
+                            <!--<button type="button" class="btn green">Save changes</button>-->
+                            <input type="submit" class="btn blue" value="Modifier" />
                         </div>
-
-                            {{ form_end(edit_form) }}
-                </div>
+                {{ form_end(edit_form) }}
             </div>
         </div>
     </div>
-
-    <ul>
-        <li>
-            <a href="{{ path('admin_parametre_composante_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
 {% endblock %}

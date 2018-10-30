@@ -1,12 +1,8 @@
-{% block extends %}
-{{ "{% extends 'default:index.html.twig' %}" }}
-{% endblock extends %}
-
 {% block page_content %}
     {{ "{% block page_content %}" }}
     {{ "{% form_theme form ':widget:fields.html.twig' %}" }}
-    <a class="btn red btn-outline sbold" data-toggle="modal" href="#basic"> Ajouter {{ entity_singularized|capitalize }} </a>
-    <div class="modal fade" id="basic" tabindex="-1" role="basic" aria-hidden="true">
+    <a class="btn red btn-outline sbold" data-toggle="modal" href="#new"> Ajouter {{ entity_singularized|capitalize }} </a>
+    <div class="modal fade" id="new" tabindex="-1" role="basic" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -15,18 +11,13 @@
                 </div>
                 {{ "{{ form_start(form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}" }}
                 <div class="modal-body">
-
                         <div class="form-body">
                             {{ '{{ form_widget(form) }}' }}
                         </div>
-
                 </div>
                 <div class="modal-footer">
-                    <!--<button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn green">Save changes</button>-->
-                    {% set hide_edit, hide_delete = true, true %}
-                    {{ include('crud/views/others/record_actions.html.twig.twig') -}}
-                    {{ "{% endblock %}" }}
+                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Fermer</button>
+                    <button type="submit" class="btn blue">Créer</button>
                 </div>
                 {{ '{{ form_end(form) }}' }}
             </div>
@@ -34,5 +25,5 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-
+{{ "{% endblock %}" }}
 {% endblock %}

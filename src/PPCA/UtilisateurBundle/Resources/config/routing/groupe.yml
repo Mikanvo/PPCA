@@ -1,0 +1,30 @@
+admin_utilisateur_groupe_index:
+    path:     /
+    defaults: { _controller: "UtilisateurBundle:Groupe:index" }
+
+admin_utilisateur_groupe_show:
+    path:     /{id}/show
+    defaults: { _controller: "UtilisateurBundle:Groupe:show" }
+
+admin_utilisateur_groupe_new:
+    path:     /new
+    defaults: { _controller: "UtilisateurBundle:Groupe:new" }
+
+admin_utilisateur_groupe_create:
+    path:     /create
+    defaults: { _controller: "UtilisateurBundle:Groupe:create" }
+    requirements: { _method: post }
+
+admin_utilisateur_groupe_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UtilisateurBundle:Groupe:edit" }
+
+admin_utilisateur_groupe_update:
+    path:     /{id}/update
+    defaults: { _controller: "UtilisateurBundle:Groupe:update" }
+    requirements: { _method: post|put }
+
+admin_utilisateur_groupe_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UtilisateurBundle:Groupe:delete" }
+    requirements: { _method: post|delete }

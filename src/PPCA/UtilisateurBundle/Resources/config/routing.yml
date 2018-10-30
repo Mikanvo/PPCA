@@ -1,3 +1,19 @@
+utilisateur_admin_utilisateur_utilisateur:
+    resource: "@UtilisateurBundle/Resources/config/routing/utilisateur.yml"
+    prefix:   /admin/utilisateur/employe
+
+utilisateur_admin_utilisateur_group:
+    resource: "@UtilisateurBundle/Resources/config/routing/groupe.yml"
+    prefix:   /admin/utilisateur/employe
+
+utilisateur_admin_utilisateur_employe:
+    resource: "@UtilisateurBundle/Resources/config/routing/employe.yml"
+    prefix:   /admin/utilisateur/employe
+
+utilisateur_admin_utilisateur_fonction:
+    resource: "@UtilisateurBundle/Resources/config/routing/fonction.yml"
+    prefix:   /admin/utilisateur/fonction
+
 utilisateur_homepage:
     path:     /
     defaults: { _controller: UtilisateurBundle:Default:index }

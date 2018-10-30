@@ -1,7 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php" description="     * @GRID\Column(field=&quot;souscomposante.libelle&quot;..." line="40" />
+    <bookmark url="file://$PROJECT_DIR$/app/Resources/views/dano/new.html.twig" description="                                &lt;div class=&quot;col-md..." line="17" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="64e03cc9-6859-4633-b78c-bc7257c52021" name="Default" comment="" />
+    <list default="true" id="64e03cc9-6859-4633-b78c-bc7257c52021" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/index.php - Copie.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/index.html.twig.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/activite/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/activite/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/activite/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/activite/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/bailleur/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/bailleur/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/bailleur/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/bailleur/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/blocks.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/blocks_old.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/dano/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/dano/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/dano/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/dano/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/footer.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/menubar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/sidebar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/topbar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/employe/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/employe/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/employe/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/employe/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/etat/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/etat/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/etat/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/etat/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/fonction/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/fonction/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/fonction/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/fonction/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/mail/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/mail/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/mail/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/mail/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/requete/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/requete/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/requete/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/requete/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sousactivite/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sousactivite/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sousactivite/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sousactivite/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/souscomposante/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/souscomposante/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/souscomposante/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/souscomposante/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/widget/fields-block.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ActiviteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/BailleurController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousActiviteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousComposanteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/ActiviteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/BailleurType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/SousActiviteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/SousComposanteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Repository/ImageRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/activite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/bailleur.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/sousactivite.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/souscomposante.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Tests/Controller/ActiviteControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Tests/Controller/BailleurControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Tests/Controller/SousActiviteControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Tests/Controller/SousComposanteControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Command/MailImapCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DanoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/EtatController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/MailController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/RequeteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Etat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeDano.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeMailDano.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/DanoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/EtatType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/MailType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/RequeteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Repository/BlaRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Repository/EtatRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Repository/PieceJointeDanoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Repository/PieceJointeMailDanoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing/dano.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing/etat.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing/mail.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing/requete.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Tests/Controller/DanoControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Tests/Controller/EtatControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Tests/Controller/MailControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Tests/Controller/RequeteControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Controller/EmployeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Controller/FonctionController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Controller/GroupeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Controller/ProfileController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Controller/UtilisateurController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Entity/Employe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Entity/Fonction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Entity/Groupe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Entity/Utilisateur.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/EventListener/SecurityListener.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Form/EmployeType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Form/FonctionType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Form/GroupeType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Form/UtilisateurType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Repository/UtilisateurRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing/employe.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing/fonction.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing/groupe.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing/utilisateur.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Tests/Controller/EmployeControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Tests/Controller/FonctionControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/grid(1).css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/grid_old.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/working_example.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/global/plugins/datagrid/working_example_old.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeMail.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/index.php.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/index.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/new.php.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/new.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/controller.php.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/controller.php.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/edit.html.twig.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/edit.html.twig.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/new.html.twig.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/new.html.twig.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/others/record_actions.html.twig.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/others/record_actions.html.twig.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/show.html.twig.twig" afterPath="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/show.html.twig.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/composante/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/composante/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/composante/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/composante/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/composante/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/composante/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/composante/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/composante/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/widget/fields-group.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/widget/fields-group.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/widget/fields.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/widget/fields.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Bailleur.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Bailleur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousActivite.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousActivite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousComposante.php" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousComposante.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/composante.yml" afterPath="$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/composante.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Dano.php" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Dano.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/HistoriqueDano.php" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/HistoriqueDano.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Mail.php" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Requete.php" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Requete.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/UtilisateurBundle.php" afterPath="$PROJECT_DIR$/src/PPCA/UtilisateurBundle/UtilisateurBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/form_controls.html" afterPath="$PROJECT_DIR$/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/form_controls.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,73 +177,84 @@
   <component name="ComposerSettings">
     <executablePath>composer</executablePath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edit.html.twig.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/edit.html.twig.twig">
+      <file leaf-file-name="Dano.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Dano.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="72" />
+            <state relative-caret-position="-338">
+              <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Composante.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.php">
+      <file leaf-file-name="DanoType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Form/DanoType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-663">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DanoController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DanoController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+              <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/new.html.twig">
+      <file leaf-file-name="PieceJointeDanoType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Form/PieceJointeDanoType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <file leaf-file-name="PieceJointeDano.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeDano.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/edit.html.twig">
+      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Image.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="76" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="76" />
+            <state relative-caret-position="391">
+              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/index.html.twig">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/dano/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composante.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/composante.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="431">
+              <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -86,24 +262,45 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>frame</find>
-      <find>.css&quot;</find>
-      <find>../</find>
-      <find>.js&quot;</find>
-      <find>horizontal</find>
-      <find>Block Help</find>
-      <find>texta</find>
-      <find>sel</find>
-      <find>dropdow</find>
-      <find>Dropdow</find>
+      <find>ville</find>
       <find>edit</find>
-      <find>View Demo</find>
-      <find>Sales Summary</find>
+      <find>sise</find>
+      <find>Submit</find>
+      <find>Default</find>
+      <find>addManipulateRender</find>
+      <find>callbacks</find>
+      <find>Url</find>
       <find>Compo</find>
-      <find>content</find>
-      <find>basic</find>
+      <find>empty_value</find>
+      <find>ParametreBundle</find>
+      <find>horizont</find>
+      <find>modal body</find>
+      <find>horizontal for</find>
+      <find>some input</find>
+      <find>Utili</find>
+      <find>GDL</find>
+      <find>etat</find>
+      <find>filter</find>
+      <find>grid_column_actions_cell</find>
+      <find>action</find>
+      <find>horizontal form</find>
+      <find>large</find>
+      <find>Input With Spinner</find>
+      <find>horizonta</find>
+      <find>modal-header</find>
+      <find>(form)</find>
+      <find>form.</find>
+      <find>Form Sample</find>
+      <find>default form</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;{{ asset('</replace>
@@ -111,36 +308,80 @@
       <replace>{{ asset('</replace>
       <replace>.js') }}</replace>
       <replace>.js') }}&quot;</replace>
+      <replace>Composante</replace>
+      <replace>composante</replace>
       <replace>show</replace>
+      <replace>urlfichier</replace>
+      <replace>&lt;Urlfichier</replace>
+      <replace>Urlfichier</replace>
+      <replace>empty_data</replace>
+      <replace>PPCA\UtilisateurBundle</replace>
+      <replace>UtilisateurBundle</replace>
+      <replace>PPCA</replace>
+      <replace>fonction</replace>
+      <replace>edit_form.</replace>
+      <replace>(show_form)</replace>
+      <replace>(edit_form)</replace>
+      <replace>show_form.</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Filesystem.php" />
-        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/widget/form_controls.html" />
-        <option value="$PROJECT_DIR$/app/Resources/views/widget/fields.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/index.html.twig.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/show.php.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/composante/show.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/composante/edit.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/show.html.twig.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/edit.html.twig.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/new.php.twig" />
-        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/new.html.twig.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/widget/fields-block.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/dano/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/global/plugins/datagrid/grid.css" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Mail.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/MailType.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Command/MailImapCommand.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/mail/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/activite/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Bailleur.php" />
         <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.php" />
-        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.orm.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Resources/views/composante/new.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/composante/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousComposante.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/sousactivite/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/sousactivite/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousActivite.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/sousactivite/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/souscomposante/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/BailleurType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/etat/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/etat/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Etat.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Dano.php" />
+        <option value="$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/BailleurController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ActiviteController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousActiviteController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousComposanteController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DanoController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/EtatController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/MailController.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/RequeteController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/etat/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/etat/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/requete/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/requete/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/requete/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/requete/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Requete.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/dano/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/dano/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeDano.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/PieceJointeDanoType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/dano/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/footer.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/menubar.html.twig" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Form/DanoType.php" />
+        <option value="$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/PieceJointeDanoController.php" />
       </list>
     </option>
   </component>
@@ -152,10 +393,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="40" />
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="1" />
+    <option name="y" value="41" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -171,6 +414,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,25 +446,12 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="composante" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
               <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
@@ -234,14 +465,6 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ParametreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ParametreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
@@ -256,27 +479,7 @@
               <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ParametreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ParametreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ParametreBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routing" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SiseBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
@@ -284,6 +487,7 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SiseBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
@@ -299,6 +503,14 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="SiseBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SiseBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -309,22 +521,30 @@
               <item name="SiseBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ppca" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ppca" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PPCA" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UtilisateurBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../santemousso.net" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp/www/ppca/app/Resources/views/base.html.twig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lanada" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp/www/ppca/src/PPCA/ParametreBundle/Controller/ComposanteController.php&#10;ker&#9;FILE&#9;file://C:/wamp/www/ppca/app/AppKernel.php&#10;grid&#9;FILE&#9;file://C:/wamp/www/ppca/web/assets/global/plugins/datagrid/grid.css&#10;ui_mo&#9;FILE&#9;file://C:/wamp/www/ppca/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_1/ui_modals.html&#10;gri&#9;FILE&#9;file://C:/wamp/www/ppca/web/assets/global/plugins/datagrid/grid.css&#10;blo&#9;FILE&#9;file://C:/wamp/www/ppca/app/Resources/views/blocks_old.html.twig&#10;sousc&#9;null&#9;null&#10;sous&#9;FILE&#9;file://C:/wamp/www/ppca/src/PPCA/ParametreBundle/Entity/SousComposante.php&#10;his&#9;null&#9;null&#10;mail&#9;FILE&#9;file://C:/wamp/www/ppca/src/PPCA/SiseBundle/Entity/Mail.php&#10;dano&#9;FILE&#9;file://C:/wamp/www/ppca/src/PPCA/SiseBundle/Entity/Dano.php&#10;ui_m&#9;FILE&#9;file://C:/wamp/www/ppca/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/ui_modals.html&#10;form&#9;FILE&#9;file://C:/wamp/www/ppca/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/form_controls.html&#10;comp&#9;FILE&#9;file://C:/wamp/www/ppca/src/PPCA/ParametreBundle/Controller/ComposanteController.php&#10;rowactio&#9;FILE&#9;file://C:/wamp/www/ppca/vendor/apy/datagrid-bundle/Grid/Action/RowAction.php&#10;form_widget&#9;null&#9;null&#10;index&#9;FILE&#9;file://C:/wamp/www/ppca/app/Resources/views/composante/index.html.twig&#10;generateCrud&#9;null&#9;null" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\ppca\web\assets\global\plugins\datagrid" />
       <recent name="C:\wamp\www\ppca\src\PPCA\ParametreBundle\Resources\config\doctrine" />
     </key>
   </component>
@@ -343,6 +563,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="64e03cc9-6859-4633-b78c-bc7257c52021" name="Default" comment="" />
@@ -355,12 +578,23 @@
       <workItem from="1539084203459" duration="5488000" />
       <workItem from="1539598092468" duration="5056000" />
       <workItem from="1539705317014" duration="3832000" />
-      <workItem from="1539770602416" duration="16572000" />
+      <workItem from="1539770602416" duration="28662000" />
+      <workItem from="1539947014002" duration="4322000" />
+      <workItem from="1539963447475" duration="7865000" />
+      <workItem from="1539976541077" duration="554000" />
+      <workItem from="1540112717602" duration="13143000" />
+      <workItem from="1540203646677" duration="10303000" />
+      <workItem from="1540301722378" duration="9651000" />
+      <workItem from="1540329947279" duration="27163000" />
+      <workItem from="1540456855248" duration="9849000" />
+      <workItem from="1540540478260" duration="15092000" />
+      <workItem from="1540807693194" duration="17996000" />
+      <workItem from="1540888131912" duration="21013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59515000" />
+    <option name="totallyTimeSpent" value="208556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,18 +607,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26510575" sideWeight="0.48032787" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3028701" sideWeight="0.43023255" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.260574" sideWeight="0.51967216" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3028701" sideWeight="0.5697674" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7180328" sideWeight="0.49697885" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -401,429 +634,424 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../santemousso.net/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../santemousso.net/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../santemousso.net/src/PS/SiteBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Loader/Filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="181" column="5" lean-forward="false" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index_original.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../lanada/app/Resources/views/widget/fields.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/form_controls.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1867" column="114" lean-forward="false" selection-start-line="1867" selection-start-column="104" selection-end-line="1867" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/widget/fields.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/show.php - Copie.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/controller.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/delete.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/widget/form_controls.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="274" column="57" lean-forward="false" selection-start-line="274" selection-start-column="57" selection-end-line="274" selection-end-column="57" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#13;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#14;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#15;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#16;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#17;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#18;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#19;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#20;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#21;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/index.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/index.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="1280" column="0" lean-forward="false" selection-start-line="1278" selection-start-column="0" selection-end-line="1280" selection-end-column="0" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/show.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="518" column="40" lean-forward="false" selection-start-line="518" selection-start-column="37" selection-end-line="518" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousComposante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/themeforest-metronic-responsive-admin-dashboard-template-V4.5.6-1/metronic_v4.5.6/theme/admin_3/ui_modals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="1320" column="142" lean-forward="false" selection-start-line="1320" selection-start-column="56" selection-end-line="1320" selection-end-column="142" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/new.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/new.php.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/show.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Bailleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/doctrine/Bailleur.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/doctrine/Composante.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/doctrine/Activite.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/views/edit.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="72" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Composante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="76" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity - Copie/Activite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity - Copie/SousActivite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity - Copie/SousComposante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity - Copie/Bailleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Resources/config/routing/composante.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        <state relative-caret-position="342">
+          <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="391">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/composante/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/ActivateUserCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="e#296#336#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousComposante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="56" lean-forward="false" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/sousactivite/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/sousactivite/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/SousActivite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="84" lean-forward="false" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/sousactivite/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="95" lean-forward="false" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/souscomposante/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="95" lean-forward="false" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/bailleur/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/bailleur/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/ActiviteType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Form/BailleurType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="77" lean-forward="false" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+          <folding>
+            <element signature="e#45#85#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/bailleur/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/etat/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="74" />
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/etat/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Activite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="62" />
+          <folding>
+            <element signature="e#47#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/edit.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="70" lean-forward="false" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SensioGeneratorBundle/skeleton/crud/actions/new.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Etat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousComposanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="115" column="80" lean-forward="false" selection-start-line="115" selection-start-column="80" selection-end-line="115" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/SousActiviteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="110" column="78" lean-forward="false" selection-start-line="110" selection-start-column="78" selection-end-line="110" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/BailleurController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="110" column="74" lean-forward="false" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ActiviteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="110" column="74" lean-forward="false" selection-start-line="110" selection-start-column="74" selection-end-line="110" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Controller/ComposanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="116" column="76" lean-forward="false" selection-start-line="116" selection-start-column="76" selection-end-line="116" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/RequeteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="102" column="106" lean-forward="false" selection-start-line="102" selection-start-column="106" selection-end-line="102" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/MailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="102" column="100" lean-forward="false" selection-start-line="102" selection-start-column="100" selection-end-line="102" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/EtatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="110" column="65" lean-forward="false" selection-start-line="110" selection-start-column="65" selection-end-line="110" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/etat/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/etat/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/requete/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Requete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/requete/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/requete/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/requete/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" column="102" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/dano/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="88" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/dano/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="77" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Git/mingw64/share/doc/git-doc/git-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Git/mingw64/share/doc/git-doc/git-commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/ParametreBundle/Entity/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/PieceJointeDano.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/topbar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/menubar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="137" column="74" lean-forward="false" selection-start-line="137" selection-start-column="74" selection-end-line="137" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Entity/Dano.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Form/PieceJointeDanoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/DanoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Controller/PieceJointeDanoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="100" column="64" lean-forward="true" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PPCA/SiseBundle/Form/DanoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/dano/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding />
         </state>
       </provider>
