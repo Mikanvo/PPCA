@@ -9,6 +9,7 @@ use APY\DataGridBundle\Grid\Source\Entity;
 use APY\DataGridBundle\Grid\Action\RowAction;
 
 
+
 /**
  * Mail controller.
  *
@@ -44,6 +45,7 @@ class MailController extends Controller
 
 
         return $grid->getGridResponse('mail/index.html.twig');
+        
     }
 
     /**
