@@ -33,31 +33,19 @@ class MailInbox
     {
         $imap = $this->imap->get('example_connection');
 
-        $mailIds =  $imap->searchMailbox('ALL'); //ALL
+        $mailIds =  $imap->searchMailbox('UNSEEN');
         $count = 0;
         foreach ($mailIds as $key => $id) {
             $mailObject = new Mail();
             $mail = $imap->getMail($mailIds[$key]);
-            $data = [
-                'corps' => $mail->textPlain ?? $mail->textHtml,
-                'objet' => $mail->subject,
-                'date' => $mail->date,
-                'expediteur' => $mail->fromName . '(' . $mail->fromAddress . ')',
-            ];
-
-            foreach ($data as $field => $value) {
-                if ($field == 'date') {
-                    $value = new \DateTime($value);
-                }
-                $mailObject->{"set" . ucfirst($field)}($value);
-            }
-
+            $mailObject->setCorps($mail->textPlain ?? $mail->textHtml);
+            $mailObject->setObjet($mail->subject);
+            $mailObject->setDate(new \DateTime($mail->date));
+            $mailObject->setExpediteur($mail->fromAddress);
             $this->em->persist($mailObject);
 
             ++$count;
         }
-
-        //dump($count);exit;
 
         if ($count) {
             $this->em->flush();
