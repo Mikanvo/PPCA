@@ -96,9 +96,11 @@ fos_user:
 imap:
     connections:
         example_connection:
-            mailbox: "{172.16.1.1:25}INBOX"
-            username: "soft@packing-service.com"
-            password: "SoftX%18"
+            mailbox: "{ci-anacarde.org:143/novalidate-cert}INBOX"
+            username: "dano@ci-anacarde.org"
+            password: "Beston01"
+            attachments_dir: "%kernel.root_dir%/../var/imap/attachments"
+            server_encoding: "UTF-8"
 
         another_connection:
             mailbox: "{localhost:143}INBOX"

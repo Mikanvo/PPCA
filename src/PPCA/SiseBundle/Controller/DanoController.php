@@ -41,8 +41,6 @@ class DanoController extends Controller
         });
         $grid->addRowAction($rowAction);
 
-
-
         return $grid->getGridResponse('dano/index.html.twig');
     }
 

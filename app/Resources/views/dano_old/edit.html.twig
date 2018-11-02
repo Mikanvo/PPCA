@@ -1,14 +1,14 @@
-{% block page_content %}
+    {% block page_content %}
     {% form_theme edit_form ':widget:fields-block.html.twig' %}
-    <a class="btn blue btn-outline sbold" data-toggle="modal" href="#edit{{ dano.id }}"> <i class="fa fa-list"></i>  </a>
+    <a class="btn red btn-outline sbold" data-toggle="modal" href="#edit{{ dano.id }}"> Modifier </a>
     <div class="modal fade" id="edit{{ dano.id }}" tabindex="-1" role="basic" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-full">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title">Modifier Dano </h4>
+                    <h4 class="modal-title">Modification Dano </h4>
                 </div>
-                {{ form_start(edit_form, {'attr': {'class':'form', 'role':'form'}}) }}
+                {{ form_start(edit_form, {'attr': {'class':'form-horizontal', 'role':'form'}}) }}
                 <div class="modal-body">
                     <div class="form-body">
                         <div class="row">
@@ -23,7 +23,7 @@
                             <div class="col-md-6">{{ form_row(edit_form.requete) }}</div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">{{ form_row(edit_form.datereception) }}</div>
+                            <div class="col-md-6">{#{{ form_row(edit_form.datereception) }}#}</div>
                             <div class="col-md-6">{#{{ form_row(edit_form.expediteur) }}#}</div>
                         </div>
                         <div class="row">
@@ -43,7 +43,7 @@
                         <div class="row">
                             {#<div class="col-md-12">{{ form_row(edit_form.piecejointe) }}</div>#}
                         </div>
-
+                        {{ form_widget(edit_form) }}
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -52,8 +52,6 @@
                 </div>
                 {{ form_end(edit_form) }}
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-{% endblock %}
+    {% endblock %}

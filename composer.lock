@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cea2c3b5ab2fa208844399efb6c978a8",
-    "content-hash": "20b8fa940a035c7af489f78730906eba",
+    "hash": "c34b7cfeb8b0f4f13a47f8d9f6f61709",
+    "content-hash": "00ccab6aa6d63424ce05084e4162581d",
     "packages": [
         {
             "name": "apy/datagrid-bundle",

@@ -1,6 +1,6 @@
     {% block page_content %}
     {% form_theme form ':widget:fields-block.html.twig' %}
-    <a class="btn green btn-outline sbold" data-toggle="modal" href="#new"> <i class="fa fa-plus"></i> Ajouter Dano </a>
+    <a class="btn green btn-outline sbold" data-toggle="modal" href="#new"><i class="fa fa-plus"></i> Ajouter Dano </a>
     <div class="modal fade" id="new" tabindex="-1" role="basic" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -10,41 +10,41 @@
                 </div>
                 {{ form_start(form, {'attr': {'class':'form', 'role':'form'}}) }}
                 <div class="modal-body">
-                        <div class="form-body">
-                            <div class="row">
-                                <div class="col-md-12">{{ form_row(form.activite) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">{{ form_row(form.numero) }}</div>
-                                <div class="col-md-6">{{ form_row(form.destinataire) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">{{ form_row(form.objet) }}</div>
-                                <div class="col-md-6">{{ form_row(form.requete) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">{{ form_row(form.datereception) }}</div>
-                                <div class="col-md-6">{#{{ form_row(form.expediteur) }}#}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">{{ form_row(form.beneficiaire) }}</div>
-                                <div class="col-md-6">{{ form_row(form.description) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">{{ form_row(form.observationPTBA) }}</div>
-                                <div class="col-md-6">{{ form_row(form.observationPPM) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">{{ form_row(form.corps) }}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">{{ form_row(form.observation) }}</div>
-                            </div>
-                            <div class="row">
-                                {#<div class="col-md-12">{{ form_row(form.piecejointe) }}</div>#}
-                            </div>
-                            {{ form_widget(form) }}
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(form.activite) }}</div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-6">{{ form_row(form.numero) }}</div>
+                            <div class="col-md-6">{{ form_row(form.destinataire) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">{{ form_row(form.objet) }}</div>
+                            <div class="col-md-6">{{ form_row(form.requete) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">{{ form_row(form.datereception) }}</div>
+                            <div class="col-md-6">{#{{ form_row(form.expediteur) }}#}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">{{ form_row(form.beneficiaire) }}</div>
+                            <div class="col-md-6">{{ form_row(form.description) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">{{ form_row(form.observationPTBA) }}</div>
+                            <div class="col-md-6">{{ form_row(form.observationPPM) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(form.corps) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(form.observation) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{#{{ form_row(form.piecejointe) }}#}</div>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn dark btn-outline" data-dismiss="modal">Fermer</button>

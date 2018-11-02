@@ -11,7 +11,7 @@ use APY\DataGridBundle\Grid\Mapping as GRID;
  *
  * @ORM\Table(name="dano")
  * @ORM\Entity(repositoryClass="PPCA\SiseBundle\Repository\DanoRepository")
- * @GRID\Source(columns="id, numero, expediteur, objet, etat")
+ * @GRID\Source(columns="id, numero, objet, requete.libelle, activite.libelle")
  */
 class Dano
 {
@@ -21,40 +21,41 @@ class Dano
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
-     * @GRID\Column(name="id", title="ID", operatorsVisible=false, filterable=false)
+     * @GRID\Column(name="id", title="ID", operatorsVisible=false, filterable=false, visible=false)
      */
     private $id;
 
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="numero", type="string", length=10, unique=true)
+     * @GRID\Column(field="destinataire.libelle", title="Numéro", size="10")
      */
     private $numero;
 
     /**
-     * @ORM\ManyToOne(targetEntity="PPCA\UtilisateurBundle\Entity\Utilisateur")
-     * @GRID\Column(field="expediteur.username", title="Expediteur")
-     */
-    private $expediteur;
-
-    /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="objet", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $objet;
 
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="corps", type="text")
+     * @Assert\NotBlank()
      */
     private $corps;
 
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="description", type="text")
      */
     private $description;
@@ -62,40 +63,29 @@ class Dano
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="observation", type="text")
      */
     private $observation;
 
     /**
-     * @ORM\Column(type="datetime")
-     * @Assert\NotBlank()
-     *
-     */
-    private $datereception;
-
-
-    /**
-     * @ORM\OneToMany(targetEntity="HistoriqueDano", mappedBy="etat", cascade={"persist"}, orphanRemoval=true)
-     * @ORM\JoinColumn(nullable=true)
-     * @Assert\NotBlank()
-     */
-    private $etat;
-
-    /**
      * @ORM\ManyToOne(targetEntity="Requete")
      * @GRID\Column(field="requete.libelle", title="Requete")
+     * @Assert\NotBlank()
      */
     private $requete;
 
     /**
      * @ORM\ManyToOne(targetEntity="PPCA\ParametreBundle\Entity\Bailleur")
      * @GRID\Column(field="destinataire.libelle", title="Bailleur")
+     * @Assert\NotBlank()
      */
     private $destinataire;
 
     /**
      * @ORM\ManyToOne(targetEntity="PPCA\ParametreBundle\Entity\Activite")
      * @GRID\Column(field="activite.libelle", title="Activite")
+     * @Assert\NotBlank()
      */
     private $activite;
 
@@ -103,6 +93,7 @@ class Dano
      * @var string
      *
      * @ORM\Column(name="beneficiaire", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $beneficiaire;
 
@@ -120,12 +111,32 @@ class Dano
      */
     private $observationPPM;
 
+    /********** Champs rajoutés **********/
+
     /**
-     * @ORM\OneToMany(targetEntity="PieceJointeDano", mappedBy="dano", cascade={"persist"}, orphanRemoval=true)
-     * @ORM\JoinColumn(nullable=true)
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime")
      * @Assert\NotBlank()
+     * @Assert\DateTime()
+     *
+     */
+    private $datereception;
+
+    /**
+     * @ORM\OneToMany(targetEntity="PieceJointeDano", mappedBy="dano")
      */
     private $piecejointe;
+
+
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->piecejointe = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -234,6 +245,30 @@ class Dano
     }
 
     /**
+     * Set observation
+     *
+     * @param string $observation
+     *
+     * @return Dano
+     */
+    public function setObservation($observation)
+    {
+        $this->observation = $observation;
+
+        return $this;
+    }
+
+    /**
+     * Get observation
+     *
+     * @return string
+     */
+    public function getObservation()
+    {
+        return $this->observation;
+    }
+
+    /**
      * Set beneficiaire
      *
      * @param string $beneficiaire
@@ -306,27 +341,27 @@ class Dano
     }
 
     /**
-     * Set expediteur
+     * Set datereception
      *
-     * @param \PPCA\UtilisateurBundle\Entity\Utilisateur $expediteur
+     * @param \DateTime $datereception
      *
      * @return Dano
      */
-    public function setExpediteur(\PPCA\UtilisateurBundle\Entity\Utilisateur $expediteur = null)
+    public function setDatereception($datereception)
     {
-        $this->expediteur = $expediteur;
+        $this->datereception = $datereception;
 
         return $this;
     }
 
     /**
-     * Get expediteur
+     * Get datereception
      *
-     * @return \PPCA\UtilisateurBundle\Entity\Utilisateur
+     * @return \DateTime
      */
-    public function getExpediteur()
+    public function getDatereception()
     {
-        return $this->expediteur;
+        return $this->datereception;
     }
 
     /**
@@ -400,72 +435,6 @@ class Dano
     {
         return $this->activite;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->etat = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->piecejointe = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Set datereception
-     *
-     * @param \DateTime $datereception
-     *
-     * @return Dano
-     */
-    public function setDatereception($datereception)
-    {
-        $this->datereception = $datereception;
-
-        return $this;
-    }
-
-    /**
-     * Get datereception
-     *
-     * @return \DateTime
-     */
-    public function getDatereception()
-    {
-        return $this->datereception;
-    }
-
-    /**
-     * Add etat
-     *
-     * @param \PPCA\SiseBundle\Entity\HistoriqueDano $etat
-     *
-     * @return Dano
-     */
-    public function addEtat(\PPCA\SiseBundle\Entity\HistoriqueDano $etat)
-    {
-        $this->etat[] = $etat;
-
-        return $this;
-    }
-
-    /**
-     * Remove etat
-     *
-     * @param \PPCA\SiseBundle\Entity\HistoriqueDano $etat
-     */
-    public function removeEtat(\PPCA\SiseBundle\Entity\HistoriqueDano $etat)
-    {
-        $this->etat->removeElement($etat);
-    }
-
-    /**
-     * Get etat
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getEtat()
-    {
-        return $this->etat;
-    }
 
     /**
      * Add piecejointe
@@ -499,29 +468,5 @@ class Dano
     public function getPiecejointe()
     {
         return $this->piecejointe;
-    }
-
-    /**
-     * Set observation
-     *
-     * @param string $observation
-     *
-     * @return Dano
-     */
-    public function setObservation($observation)
-    {
-        $this->observation = $observation;
-
-        return $this;
-    }
-
-    /**
-     * Get observation
-     *
-     * @return string
-     */
-    public function getObservation()
-    {
-        return $this->observation;
     }
 }

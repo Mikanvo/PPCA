@@ -98,8 +98,10 @@
     padding: 0 0 5px;
 }
 
-.btn{
+.grid-row-actions .btn{
     padding: 2px 3px;
+    border: none;
+    display: inline;
 }
 
 .table > thead > tr > th {
@@ -112,4 +114,11 @@
 
 .modal-header{
     background-color: #32c5d2;
+}
+
+.form-group .required {
+    color: #333;
+    font-size: 12px;
+    font-weight: 800;
+    padding-left: 2px;
 }
