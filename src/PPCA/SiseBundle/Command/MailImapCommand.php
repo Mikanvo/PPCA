@@ -13,20 +13,21 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
+use PPCA\SiseBundle\Service\MailInbox;
 
 
 class MailImapCommand extends Command
 {
-    protected static $defaultEmail = 'fos:user:activate';
 
-    private $userManipulator;
+    private $mailInbox;
 
-    public function __construct(UserManipulator $userManipulator)
+
+    public function __construct(MailInbox $mailInbox)
     {
         parent::__construct();
-
-        $this->userManipulator = $userManipulator;
+        $this->mailInbox = $mailInbox;
     }
+    
 
     /**
      * {@inheritdoc}
@@ -34,8 +35,8 @@ class MailImapCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('dano:email:receive')
-            ->setDescription('Recupération des mails de DANO')
+            //->setName('dano:email:insert')
+            ->setDescription('Recupération et insertions des mails de DANO')
             /*->setDefinition(array(
                 new InputArgument('username', InputArgument::REQUIRED, 'The username'),
             ))*/
@@ -52,11 +53,13 @@ EOT
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $username = $input->getArgument('username');
+        $result = $this->mailInbox->processInsert();
 
-        $this->userManipulator->activate($username);
-
-        $output->writeln(sprintf('User "%s" has been activated.', $username));
+        if ($result > 0) {
+            $output->writeln($result . ' message(s) inséré(s)');
+        } else {
+            $output->writeln('Aucun message non lu');
+        }
     }
 
 
