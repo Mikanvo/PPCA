@@ -1,7 +1,17 @@
+admin_sise_dano_liste:
+    path:     /{etat}/liste
+    defaults: { _controller: "SiseBundle:Dano:liste" }
+    methods:  [GET, POST]
+
 admin_sise_dano_index:
     path:     /
     defaults: { _controller: "SiseBundle:Dano:index" }
-    methods:  GET
+    methods:  [GET, POST]
+
+admin_sise_dano_finalisees:
+    path:     /finalisees
+    defaults: { _controller: "SiseBundle:Dano:finalisees" }
+    methods:  [GET, POST]
 
 admin_sise_dano_show:
     path:     /{id}/show
@@ -22,3 +32,8 @@ admin_sise_dano_delete:
     path:     /{id}/delete
     defaults: { _controller: "SiseBundle:Dano:delete" }
     methods:  DELETE
+
+admin_sise_dano_send_mail:
+    path:     /{id}/envoyerMailDano
+    defaults: { _controller: "SiseBundle:Dano:envoyerMailDano" }
+    methods:  [GET, POST]

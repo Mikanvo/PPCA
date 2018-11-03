@@ -124,10 +124,21 @@ class Dano
     private $datereception;
 
     /**
-     * @ORM\OneToMany(targetEntity="PieceJointeDano", mappedBy="dano")
+     * @ORM\OneToMany(targetEntity="PieceJointeDano", mappedBy="dano", cascade={"persist"}, orphanRemoval=true)
      */
     private $piecejointe;
 
+    /**
+     * @ORM\OneToMany(targetEntity="HistoriqueDano", mappedBy="dano", cascade={"persist"})
+     */
+    private $etape;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Etat")
+     * @GRID\Column(field="etat.libelle", title="Etat")
+     * @Assert\NotBlank()
+     */
+    private $etat;
 
 
     /**
@@ -447,6 +458,8 @@ class Dano
     {
         $this->piecejointe[] = $piecejointe;
 
+        $piecejointe->setDano($this);
+
         return $this;
     }
 
@@ -468,5 +481,63 @@ class Dano
     public function getPiecejointe()
     {
         return $this->piecejointe;
+    }
+
+    /**
+     * Add etape
+     *
+     * @param \PPCA\SiseBundle\Entity\HistoriqueDano $etape
+     *
+     * @return Dano
+     */
+    public function addEtape(\PPCA\SiseBundle\Entity\HistoriqueDano $etape)
+    {
+        $this->etape[] = $etape;
+
+        return $this;
+    }
+
+    /**
+     * Remove etape
+     *
+     * @param \PPCA\SiseBundle\Entity\HistoriqueDano $etape
+     */
+    public function removeEtape(\PPCA\SiseBundle\Entity\HistoriqueDano $etape)
+    {
+        $this->etape->removeElement($etape);
+    }
+
+    /**
+     * Get etape
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getEtape()
+    {
+        return $this->etape;
+    }
+
+    /**
+     * Set etat
+     *
+     * @param \PPCA\SiseBundle\Entity\Etat $etat
+     *
+     * @return Dano
+     */
+    public function setEtat(\PPCA\SiseBundle\Entity\Etat $etat = null)
+    {
+        $this->etat = $etat;
+
+        return $this;
+    }
+
+    /**
+     * Get etat
+     *
+     * @return \PPCA\SiseBundle\Entity\Etat
+     */
+    public function getEtat()
+    {
+        return $this->etat;
     }
 }

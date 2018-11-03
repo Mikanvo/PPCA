@@ -24,7 +24,7 @@ class HistoriqueDano
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Dano")
+     * @ORM\ManyToOne(targetEntity="Dano", inversedBy="etape")
      * @GRID\Column(field="dano.objet", title="Dano")
      */
     private $dano;
@@ -38,7 +38,7 @@ class HistoriqueDano
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="date", type="datetime")
      */
     private $date;
 
@@ -53,6 +53,12 @@ class HistoriqueDano
     public function getId()
     {
         return $this->id;
+    }
+
+
+    public function __construct()
+    {
+        $this->date = new \DateTime();
     }
 
     /**

@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new APY\DataGridBundle\APYDataGridBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new SecIT\ImapBundle\ImapBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

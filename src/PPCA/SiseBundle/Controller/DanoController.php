@@ -3,6 +3,8 @@
 namespace PPCA\SiseBundle\Controller;
 
 use PPCA\SiseBundle\Entity\Dano;
+use PPCA\SiseBundle\Entity\HistoriqueDano;
+use PPCA\SiseBundle\Entity\Etat;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use APY\DataGridBundle\Grid\Source\Entity;
@@ -44,6 +46,38 @@ class DanoController extends Controller
         return $grid->getGridResponse('dano/index.html.twig');
     }
 
+
+    /**
+     * Lists all affection entities.
+     *
+     */
+    public function finaliseesAction(Request $request)
+    {
+        return $this->render('dano/finalisees.html.twig');
+    }
+
+    /**
+     * Lists all affection entities.
+     *
+     */
+    public function listeAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $listes_dano = $em->getRepository('SiseBundle:Dano')->findAll();
+
+        $danos  = $this->get('knp_paginator')->paginate(
+            $listes_dano,
+            $request->query->get('page', 1)/*page number*/,
+            10/*limit per page*/
+        );
+
+
+        return $this->render('dano/liste.html.twig', array(
+            'danos' => $danos,
+        ));
+    }
+
     /**
      * Creates a new dano entity.
      *
@@ -59,7 +93,20 @@ class DanoController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
+            //Mise à jour de l'état de la dano
+            $dano->setEtat($em->getRepository('SiseBundle:Etat')->find(1));
+
             $em->persist($dano);
+
+            // Création de la ligne d'historique
+            $historique = new HistoriqueDano();
+            $historique->setEtat($em->getRepository('SiseBundle:Etat')->find(1));
+            $historique->setDano($dano);
+
+            $em->persist($historique);
+
+            // Validation des entités persistées
             $em->flush();
 
             return $this->redirectToRoute('admin_sise_dano_index');
@@ -148,5 +195,62 @@ class DanoController extends Controller
             ->setMethod('DELETE')
             ->getForm()
         ;
+    }
+
+    /**
+     * Sends a dano by mail.
+     *
+     */
+
+    public function envoyerMailDanoAction(Request $request, Dano $dano)
+    {
+        $mailForm = $this->createForm('PPCA\SiseBundle\Form\DanoMailType', array(
+            'action' => $this->generateUrl('admin_sise_dano_send_mail', array('id' => $dano->getId())),
+            'method' => 'POST',
+        ));
+        $mailForm->handleRequest($request);
+
+        if ($mailForm->isSubmitted() && $mailForm->isValid()) {
+            $this->getDoctrine()->getManager()->flush();
+
+            //Fonction denvoie de dano par mail
+            $data = $mailForm->getData();
+
+            $message = (new \Swift_Message($data['objet']))
+                ->setFrom($data['email'], $data['nom'])
+                ->setTo($data['destinataire'])
+                ->setBody($data['message'], 'text/plain');
+
+            if ($this->get('mailer')->send($message)) {
+
+                // Création de la ligne d'historique
+                $historique = new HistoriqueDano();
+                $historique->setEtat(2);
+                $historique->setDano($dano->getId());
+
+                // On récupère l'EntityManager
+                $em = $this->getDoctrine()->getManager();
+
+                // Étape 1 : On « persiste » l'entité
+                $em->persist($historique);
+
+                // Étape 2 : On « flush » tout ce qui a été persisté avant
+                $em->flush();
+
+                //Flash pour mail envoyé
+                $this->addFlash('success', 'Votre mail a été envoyé. Nous vous repondrons dans les plus brefs délais!');
+
+            } else {
+                //Flash pour mail non envoyé
+                $this->addFlash('warning', 'Votre mail n\'a pas été envoyé. Merci réessayer!');
+            }
+
+            return $this->redirectToRoute('admin_sise_dano_index');
+        }
+
+        return $this->render('dano/mail.html.twig', array(
+            'dano' => $dano,
+            'mail_form' => $mailForm->createView(),
+        ));
     }
 }

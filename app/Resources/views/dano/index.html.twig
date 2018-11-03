@@ -7,7 +7,7 @@
                 <div class="portlet-title">
                     <div class="caption">
                         <i class="icon-settings font-dark"></i>
-                        <span class="caption-subject font-dark sbold uppercase">Liste des Danos</span>
+                        <span class="caption-subject font-dark sbold uppercase">Danos en cours</span>
                     </div>
                     <div class="actions">
                         <div class="btn-group">
@@ -22,15 +22,37 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    {#<div class="table-toolbar">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="btn-group">
-                                    {{ render(controller('SiseBundle:Dano:new')) }}                                </div>
+                    <div class="tabbable-custom ">
+                        <ul class="nav nav-tabs ">
+                            <li>
+                                <a href="#tab_5_1" data-toggle="tab"> Courriers pour DANO </a>
+                            </li>
+                            <li class="active">
+                                <a href="#tab_5_2" data-toggle="tab"> DANO en instance </a>
+                            </li>
+                            <li>
+                                <a href="#tab_5_3" data-toggle="tab"> DANO soumis au bailleurs </a>
+                            </li>
+                            <li>
+                                <a href="#tab_5_4" data-toggle="tab"> Archives </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="tab_5_1">
+                                {{ render(controller('SiseBundle:Mail:liste')) }}
+                            </div>
+                            <div class="tab-pane active" id="tab_5_2">
+                                {{ render(controller('SiseBundle:Dano:liste')) }}
+                            </div>
+                            <div class="tab-pane" id="tab_5_3">
+                                {{ render(controller('SiseBundle:Dano:liste')) }}
+                            </div>
+                            <div class="tab-pane" id="tab_5_4">
+                                {{ render(controller('SiseBundle:Dano:liste')) }}
                             </div>
                         </div>
-                    </div>#}
-                    {{ grid(grid) }}
+                    </div>
+
                 </div>
             </div>
         </div>

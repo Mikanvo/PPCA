@@ -1,3 +1,8 @@
+#admin_sise_mail_liste:
+#    path:     /liste
+#    defaults: { _controller: "SiseBundle:Mail:liste" }
+#    methods:  [GET, POST]
+
 admin_sise_mail_index:
     path:     /
     defaults: { _controller: "SiseBundle:Mail:index" }
@@ -22,3 +27,13 @@ admin_sise_mail_delete:
     path:     /{id}/delete
     defaults: { _controller: "SiseBundle:Mail:delete" }
     methods:  DELETE
+
+admin_sise_mail_retour_bailleur:
+    path:     /retourBailleur
+    defaults: { _controller: "SiseBundle:Mail:bailleur" }
+    methods:  [GET, POST]
+
+admin_sise_mail_follow:
+    path:     /suivre
+    defaults: { _controller: "SiseBundle:Mail:follow" }
+    methods:  [GET, POST]

@@ -1,0 +1,42 @@
+{% block page_content %}
+    {% form_theme mail_form ':widget:fields-block.html.twig' %}
+    <a class="btn btn-xs blue btn-outline sbold" data-toggle="modal" href="#mail{{ dano.id }}"> <i class="icon-envelope-letter "></i> Envoyer par mail  </a>
+    <div class="modal fade" id="mail{{ dano.id }}" tabindex="-1" role="basic" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title">Envoyer Dano par mail </h4>
+                </div>
+                {{ form_start(mail_form, {'attr': {'class':'form', 'role':'form'}}) }}
+                <div class="modal-body">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(mail_form.destinataire) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(mail_form.copie) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(mail_form.objet) }}</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">{{ form_row(mail_form.message) }}</div>
+                        </div>
+                        {#<div class="row">
+                            <div class="col-md-12">{{ form_row(mail_form.piecejointe) }}</div>
+                        </div>#}
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn blue">Envoyer</button>
+                </div>
+                {{ form_end(mail_form) }}
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+{% endblock %}

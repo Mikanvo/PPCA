@@ -51,44 +51,34 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-dropdown mega-menu-dropdown  ">
-                        <a href="javascript:;"> Utilisateur
+                    <li class="menu-dropdown classic-menu-dropdown active">
+                        <a href="javascript:;"> Utilisateurs
                             <span class="arrow"></span>
                         </a>
-                        <ul class="dropdown-menu" style="min-width: 710px">
-                            <li>
-                                <div class="mega-menu-content">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <a href="{{ path('admin_utilisateur_fonction_index') }}"> Fonction </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <a href="{{ path('admin_utilisateur_employe_index') }}"> Employé </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <a href="{{ path('admin_utilisateur_groupe_index') }}"> Groupe </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <a href="{{ path('admin_utilisateur_utilisateur_index') }}"> Utilisateur </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                        <ul class="dropdown-menu pull-left">
+                            <li class=" active">
+                                <a href="{{ path('admin_utilisateur_fonction_index') }}" class="nav-link  active">
+                                    <i class="icon-graduation "></i> Fonctions
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_utilisateur_employe_index') }}" class="nav-link">
+                                    <i class="icon-user-follow"></i> Employés
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_utilisateur_groupe_index') }}" class="nav-link">
+                                    <i class="icon-users"></i> Groupes
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
+                            </li>
+                            <li class=" ">
+                                <a href="{{ path('admin_utilisateur_utilisateur_index') }}" class="nav-link">
+                                    <i class="icon-user"></i> Utilisateurs
+                                    {#<span class="badge badge-success">1</span>#}
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -98,66 +88,55 @@
                         </a>
                         <ul class="dropdown-menu pull-left">
                             <li class=" ">
-                                <a href="layout_mega_menu_light.html" class="nav-link  "> Light Mega Menu </a>
+                                <a href="layout_mega_menu_light.html" class="nav-link  "> Archivage </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-dropdown mega-menu-dropdown  mega-menu-full">
-                        <a href="javascript:;"> Gestion du projet
+                    <li class="menu-dropdown classic-menu-dropdown ">
+                        <a href="javascript:;">
+                            <i class="icon-briefcase"></i> Gestion du projet
                             <span class="arrow"></span>
                         </a>
-                        <ul class="dropdown-menu" style="min-width: ">
-                            <li>
-                                <div class="mega-menu-content">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <h3>PARAMETRES</h3>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_parametre_bailleur_index') }}"> Bailleur </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_sise_requete_index') }}"> Requete </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_sise_etat_index') }}"> Etat </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <h3>DANO</h3>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_sise_dano_index') }}"> Dano en cours </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_sise_dano_index') }}"> Retours des bailleurs </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ path('admin_sise_dano_index') }}"> Dano finalisés </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <h3>TITRE</h3>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <ul class="mega-menu-submenu">
-                                                <li>
-                                                    <h3>TITRE</h3>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                        <ul class="dropdown-menu pull-left">
+                            <li class="dropdown-submenu ">
+                                <a href="javascript:;" class="nav-link nav-toggle ">
+                                    <i class="icon-basket"></i> Paramètres
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class=" ">
+                                        <a href="{{ path('admin_parametre_bailleur_index') }}" class="nav-link ">
+                                            <i class="icon-home"></i> Bailleur </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="{{ path('admin_sise_requete_index') }}" class="nav-link ">
+                                            <i class="icon-basket"></i> Requêtes </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="{{ path('admin_sise_etat_index') }}" class="nav-link ">
+                                            <i class="icon-tag"></i> Etats </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu ">
+                                <a href="javascript:;" class="nav-link nav-toggle ">
+                                    <i class="icon-docs"></i> DANO
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class=" ">
+                                        <a href="{{ path('admin_sise_dano_index') }}" class="nav-link ">
+                                            <i class="icon-clock"></i> Dano en cours </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="{{ path('admin_sise_mail_retour_bailleur') }}" class="nav-link ">
+                                            <i class="icon-check"></i> Retour de bailleurs </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="{{ path('admin_sise_dano_finalisees') }}" class="nav-link ">
+                                            <i class="icon-envelope"></i> Dano finalisées </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>

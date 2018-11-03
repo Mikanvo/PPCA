@@ -5,6 +5,7 @@ namespace PPCA\SiseBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use APY\DataGridBundle\Grid\Mapping as GRID;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * PieceJointeDano
@@ -23,6 +24,12 @@ class PieceJointeDano
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Dano", inversedBy="piecejointe")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $dano;
 
 
     /**
@@ -204,4 +211,28 @@ class PieceJointeDano
         return @$this->getUploadDir().'/'.$this->getId().'.'.$this->getUrl();
     }
 
+
+    /**
+     * Set dano
+     *
+     * @param \PPCA\SiseBundle\Entity\Dano $dano
+     *
+     * @return PieceJointeDano
+     */
+    public function setDano(\PPCA\SiseBundle\Entity\Dano $dano = null)
+    {
+        $this->dano = $dano;
+
+        return $this;
+    }
+
+    /**
+     * Get dano
+     *
+     * @return \PPCA\SiseBundle\Entity\Dano
+     */
+    public function getDano()
+    {
+        return $this->dano;
+    }
 }

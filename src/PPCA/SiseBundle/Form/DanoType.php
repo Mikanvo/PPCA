@@ -9,6 +9,7 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 
 class DanoType extends AbstractType
@@ -48,10 +49,22 @@ class DanoType extends AbstractType
                     //'empty_value' => "--- Choisir une composante ---",
                     'empty_data' => "-Selectionnez une activite-"
                 ))
-            ->add('datereception',DateType::class, array('label'=>'Date de reception'))
-
+            ->add('datereception',DateType::class,
+                array(
+                    'label'=>'Date de reception'
+                ))
+            ->add('piecejointe',CollectionType::class ,
+                array(
+                    'entry_type'	=> PieceJointeDanoType::class,
+                    //'label' 		=> false,
+                    'allow_add'    	=> true,
+                    'allow_delete' 	=> true,
+                    'by_reference' 	=> false,
+                    'entry_options' 		=> array('label' => false)
+                ))
         ;
-    }/**
+    }
+    /**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)

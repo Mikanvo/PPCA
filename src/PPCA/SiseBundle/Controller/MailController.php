@@ -47,6 +47,51 @@ class MailController extends Controller
     }
 
     /**
+     * Lists all mail entities.
+     *
+     */
+    public function bailleurAction(Request $request)
+    {
+
+        $source = new Entity('SiseBundle:Mail');
+
+        $grid = $this->get('grid');
+
+        $grid->setSource($source);
+
+
+        $rowAction = new RowAction('Suivre une DANO', 'admin_sise_mail_suivre');
+        $rowAction->addManipulateRender(function ($action, $row)  {
+            return ['controller' => 'SiseBundle:Mail:follow', 'parameters' => ['id' => $row->getField('id')]];
+        });
+        $grid->addRowAction($rowAction);
+
+        return $grid->getGridResponse('mail/bailleur.html.twig');
+    }
+
+    /**
+     * Lists all affection entities.
+     *
+     */
+    public function listeAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $listes_mail = $em->getRepository('SiseBundle:Mail')->findAll();
+
+        $mails  = $this->get('knp_paginator')->paginate(
+            $listes_mail,
+            $request->query->get('page', 1)/*page number*/,
+            10/*limit per page*/
+        );
+
+
+        return $this->render('mail/liste.html.twig', array(
+            'mails' => $mails,
+        ));
+    }
+
+    /**
      * Creates a new mail entity.
      *
      */
@@ -118,6 +163,26 @@ class MailController extends Controller
         ));
     }
 
+    public function followAction(Request $request, Mail $mail)
+    {
+        $followForm = $this->createForm('PPCA\SiseBundle\Form\MailType', array(
+            'action' => $this->generateUrl('admin_sise_mail_follow', array('id' => $mail->getId())),
+            'method' => 'POST',
+        ));
+        $followForm->handleRequest($request);
+
+        if ($followForm->isSubmitted() && $followForm->isValid()) {
+            $this->getDoctrine()->getManager()->flush();
+
+            return $this->redirectToRoute('admin_sise_mail_index');
+        }
+
+        return $this->render('mail/follow.html.twig', array(
+            'mail' => $mail,
+            'follow_form' => $followForm->createView(),
+        ));
+
+    }
     /**
      * Deletes a mail entity.
      *

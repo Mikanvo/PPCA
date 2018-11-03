@@ -1,0 +1,37 @@
+{% extends ':default:index.html.twig' %}
+
+    {% block page_content %}
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject font-dark sbold uppercase">DANO finalisées</span>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="tabbable-custom ">
+                            <ul class="nav nav-tabs ">
+                                <li>
+                                    <a href="#tab_5_1" data-toggle="tab"> Finalisées </a>
+                                </li>
+                                <li class="active">
+                                    <a href="#tab_5_2" data-toggle="tab"> Archivées </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="tab_5_1">
+                                    {{ render(controller('SiseBundle:Dano:liste')) }}
+                                </div>
+                                <div class="tab-pane active" id="tab_5_2">
+                                    {{ render(controller('SiseBundle:Dano:liste')) }}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
