@@ -49,6 +49,7 @@ class DanoType extends AbstractType
                     //'empty_value' => "--- Choisir une composante ---",
                     'empty_data' => "-Selectionnez une activite-"
                 ))
+            //->add('datereception',DateType::class,array("widget"=>"single_text", 'label'=>'Date', 'format' => 'dd/MM/yyyy hh:mm:ss'))
             ->add('datereception',DateType::class,
                 array(
                     'label'=>'Date de reception'

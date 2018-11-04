@@ -20,10 +20,11 @@ class MailType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('date',DateType::class,array("widget"=>"single_text", 'label'=>'Date', 'format' => 'dd/MM/yyyy'))
+            ->add('expediteur',EmailType::class, array("label"=>"Expediteur"))
             ->add('objet',TextType::class,array('label'=>'Objet'))
             ->add('corps',TextareaType::class,array('label'=>'Message'))
-            ->add('date',DateType::class,array("widget"=>"single_text", 'label'=>'Date', 'format' => 'dd/MM/yyyy'))
-            ->add('expediteur',EmailType::class, array("label"=>"Expediteur"));
+        ;
     }/**
      * {@inheritdoc}
      */

@@ -38,7 +38,7 @@ class MailInbox
         foreach ($mailIds as $key => $id) {
             $mailObject = new Mail();
             $mail = $imap->getMail($mailIds[$key]);
-            $mailObject->setCorps($mail->textPlain ?? $mail->textHtml);
+            $mailObject->setCorps(isset($mail->textPlain) ? $mail->textPlain : $mail->textHtml);
             $mailObject->setObjet($mail->subject);
             $mailObject->setDate(new \DateTime($mail->date));
             $mailObject->setExpediteur($mail->fromAddress);

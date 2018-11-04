@@ -102,12 +102,6 @@ imap:
             attachments_dir: "%kernel.root_dir%/../var/imap/attachments"
             server_encoding: "UTF-8"
 
-        another_connection:
-            mailbox: "{localhost:143}INBOX"
-            username: "username"
-            password: "password"
-            attachments_dir: "%kernel.root_dir%/../var/imap/attachments"
-            server_encoding: "UTF-8"
 
 #knp
 knp_paginator:

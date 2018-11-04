@@ -116,9 +116,7 @@ class Dano
     /**
      * @var \DateTime
      *
-     * @ORM\Column(type="datetime")
-     * @Assert\NotBlank()
-     * @Assert\DateTime()
+     * @ORM\Column(name="datereception", type="datetime")
      *
      */
     private $datereception;
