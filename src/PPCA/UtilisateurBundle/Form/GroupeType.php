@@ -16,7 +16,7 @@ class GroupeType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('roles', 'collection', array('type' => 'choice',
+            /*->add('roles', 'collection', array('type' => 'choice',
                                 			    'allow_add'    => true,
                                 			    'allow_delete' => true,
                                 				'options' => array('label' => false,
@@ -38,7 +38,7 @@ class GroupeType extends AbstractType
                                                                     )
                    )
                )
-           )
+           )*/
             //->add('utilisateur')
             //->add('user')
         ;

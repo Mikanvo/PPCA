@@ -11,6 +11,7 @@ use APY\DataGridBundle\Grid\Mapping as GRID;
  *
  * @ORM\Table(name="mail")
  * @ORM\Entity(repositoryClass="PPCA\SiseBundle\Repository\MailRepository")
+ * @GRID\Source(columns="id, date, expediteur, objet")
  */
 class Mail
 {
@@ -20,6 +21,7 @@ class Mail
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @GRID\Column(name="id", title="ID", operatorsVisible=false, filterable=false, visible=false)
      */
     private $id;
 

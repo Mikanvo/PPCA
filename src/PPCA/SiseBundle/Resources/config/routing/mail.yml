@@ -34,6 +34,6 @@ admin_sise_mail_retour_bailleur:
     methods:  [GET, POST]
 
 admin_sise_mail_follow:
-    path:     /suivre
+    path:     /{id}/suivre
     defaults: { _controller: "SiseBundle:Mail:follow" }
     methods:  [GET, POST]

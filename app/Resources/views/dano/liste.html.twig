@@ -40,7 +40,7 @@
                 <span></span>
             </label>
         </th>
-        <th> Numero </th>
+        <th> N° </th>
         <th> Objet </th>
         <th> Requête </th>
         <th> Activite </th>
@@ -61,17 +61,36 @@
         <td> {{ dano.requete.libelle }} </td>
         <td> {{ dano.activite.libelle }} </td>
         <td>
+            {% if etat == 1 %}
             <div class="btn-group">
                 {{ render(controller('SiseBundle:Dano:show', { 'id': dano.id })) }}
                 {{ render(controller('SiseBundle:Dano:edit', { 'id': dano.id })) }}
-                {{ render(controller('SiseBundle:Dano:envoyerMailDano', { 'id': dano.id })) }}
             </div>
+            {% endif %}
+            {% if etat == 2 %}
+                <div class="btn-group">
+                    {{ render(controller('SiseBundle:Dano:edit', { 'id': dano.id })) }}
+                    {{ render(controller('SiseBundle:Dano:envoyerMailDano', { 'id': dano.id })) }}
+                </div>
+            {% endif %}
+            {% if etat == 3 %}
+                <div class="btn-group">
+                    {{ render(controller('SiseBundle:Dano:show', { 'id': dano.id })) }}
+                </div>
+            {% endif %}
+            {% if etat == 4 %}
+                <div class="btn-group">
+                    {{ render(controller('SiseBundle:Dano:show', { 'id': dano.id })) }}
+                </div>
+            {% endif %}
+            {% if etat == 5 %}
+                <div class="btn-group">
+                    {{ render(controller('SiseBundle:Dano:show', { 'id': dano.id })) }}
+                </div>
+            {% endif %}
+
         </td>
     </tr>
     {% endfor %}
     </tbody>
 </table>
-
-<div class="navigation">
-    {{ knp_pagination_render(danos) }}
-</div>

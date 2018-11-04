@@ -3,6 +3,7 @@
 namespace PPCA\SiseBundle\Controller;
 
 use PPCA\SiseBundle\Entity\Dano;
+use PPCA\SiseBundle\Entity\Mail;
 use PPCA\SiseBundle\Entity\HistoriqueDano;
 use PPCA\SiseBundle\Entity\Etat;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -60,7 +61,7 @@ class DanoController extends Controller
      * Lists all affection entities.
      *
      */
-    public function listeAction(Request $request)
+    public function listeAction(Request $request, $etat = 1)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -69,12 +70,13 @@ class DanoController extends Controller
         $danos  = $this->get('knp_paginator')->paginate(
             $listes_dano,
             $request->query->get('page', 1)/*page number*/,
-            10/*limit per page*/
+            1000/*limit per page*/
         );
 
 
         return $this->render('dano/liste.html.twig', array(
             'danos' => $danos,
+            'etat'  => $etat,
         ));
     }
 
@@ -82,7 +84,7 @@ class DanoController extends Controller
      * Creates a new dano entity.
      *
      */
-    public function newAction(Request $request)
+    public function newAction(Request $request, Mail $mail = null, $origine = 'sample')
     {
         $dano = new Dano();
         $form = $this->createForm('PPCA\SiseBundle\Form\DanoType', $dano, array(
@@ -99,6 +101,9 @@ class DanoController extends Controller
 
             $em->persist($dano);
 
+            if($origine == 'mail'):
+                $mail->setDano($dano);
+            endif;
             // Création de la ligne d'historique
             $historique = new HistoriqueDano();
             $historique->setEtat($em->getRepository('SiseBundle:Etat')->find(1));

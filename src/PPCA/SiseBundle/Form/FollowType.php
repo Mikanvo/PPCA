@@ -27,7 +27,7 @@ class FollowType extends AbstractType
                     'label'=>'Numero',
                     'required'=>true,
                     'class'=>'SiseBundle:Dano',
-                    'choice_label' => 'libelle',
+                    'choice_label' => 'numero',
                     'empty_data' => "-Choisir une DANO-"
                 ))
        ;

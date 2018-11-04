@@ -43,7 +43,7 @@
         <th> Date </th>
         <th> Expediteur </th>
         <th> Objet </th>
-        <th> Contenu </th>
+        {#<th> Contenu </th>#}
         <th> Actions </th>
     </tr>
     </thead>
@@ -59,18 +59,14 @@
             <td> {{ mail.date|date('d/m/Y') }} </td>
             <td> {{ mail.expediteur }} </td>
             <td> {{ mail.objet }} </td>
-            <td> {{ mail.corps }} </td>
+            {#<td> {{ mail.corps }} </td>#}
             <td>
                 <div class="btn-group">
                     {{ render(controller('SiseBundle:Dano:new', { 'id': mail.id })) }}
-                    {{ render(controller('SiseBundle:Mail:edit', { 'id': mail.id })) }}
+                    {{ render(controller('SiseBundle:Mail:follow', { 'id': mail.id })) }}
                 </div>
             </td>
         </tr>
     {% endfor %}
     </tbody>
 </table>
-
-<div class="navigation">
-    {{ knp_pagination_render(mails) }}
-</div>

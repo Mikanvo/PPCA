@@ -27,8 +27,11 @@
                             <li>
                                 <a href="#tab_5_1" data-toggle="tab"> Courriers pour DANO </a>
                             </li>
+                            <li>
+                                <a href="#tab_5_6" data-toggle="tab"> DANO non validées </a>
+                            </li>
                             <li class="active">
-                                <a href="#tab_5_2" data-toggle="tab"> DANO en instance </a>
+                                <a href="#tab_5_2" data-toggle="tab"> DANO en attente d'envoi </a>
                             </li>
                             <li>
                                 <a href="#tab_5_3" data-toggle="tab"> DANO soumis au bailleurs </a>
@@ -41,14 +44,17 @@
                             <div class="tab-pane" id="tab_5_1">
                                 {{ render(controller('SiseBundle:Mail:liste')) }}
                             </div>
+                            <div class="tab-pane" id="tab_5_6">
+                                {{ render(controller('SiseBundle:Dano:liste',{'etat':1})) }}
+                            </div>
                             <div class="tab-pane active" id="tab_5_2">
-                                {{ render(controller('SiseBundle:Dano:liste')) }}
+                                {{ render(controller('SiseBundle:Dano:liste',{'etat':2})) }}
                             </div>
                             <div class="tab-pane" id="tab_5_3">
-                                {{ render(controller('SiseBundle:Dano:liste')) }}
+                                {{ render(controller('SiseBundle:Dano:liste',{'etat':3})) }}
                             </div>
                             <div class="tab-pane" id="tab_5_4">
-                                {{ render(controller('SiseBundle:Dano:liste')) }}
+                                {{ render(controller('SiseBundle:Dano:liste',{'etat':4})) }}
                             </div>
                         </div>
                     </div>

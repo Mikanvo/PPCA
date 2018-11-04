@@ -1,6 +1,6 @@
 {% block page_content %}
     {% form_theme follow_form ':widget:fields.html.twig' %}
-    <a class="btn red btn-outline sbold" data-toggle="modal" href="#edit{{ mail.id }}"> Modifier </a>
+    <a class="btn btn-xs yellow btn-outline sbold" data-toggle="modal" href="#edit{{ mail.id }}"><i class="fa fa-mail-forward"></i> Ressoumission </a>
     <div class="modal fade" id="edit{{ mail.id }}" tabindex="-1" role="basic" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn dark btn-outline" data-dismiss="modal">Annuler</button>
-                    <button type="submit" class="btn blue">Modifier</button>
+                    <button type="submit" class="btn blue">Enregistrer</button>
                 </div>
                 {{ form_end(follow_form) }}
             </div>

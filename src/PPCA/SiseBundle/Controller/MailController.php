@@ -3,6 +3,7 @@
 namespace PPCA\SiseBundle\Controller;
 
 use PPCA\SiseBundle\Entity\Mail;
+use PPCA\SiseBundle\Entity\Etat;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use APY\DataGridBundle\Grid\Source\Entity;
@@ -62,9 +63,9 @@ class MailController extends Controller
         $grid->setSource($source);
 
 
-        $rowAction = new RowAction('Suivre une DANO', 'admin_sise_mail_suivre');
+        $rowAction = new RowAction('Aperçu', 'admin_sise_mail_show');
         $rowAction->addManipulateRender(function ($action, $row)  {
-            return ['controller' => 'SiseBundle:Mail:follow', 'parameters' => ['id' => $row->getField('id')]];
+            return ['controller' => 'SiseBundle:Mail:show', 'parameters' => ['id' => $row->getField('id')]];
         });
         $grid->addRowAction($rowAction);
 
@@ -75,7 +76,7 @@ class MailController extends Controller
      * Lists all affection entities.
      *
      */
-    public function listeAction(Request $request)
+    public function listeAction(Request $request, $etat = 1)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -84,12 +85,13 @@ class MailController extends Controller
         $mails  = $this->get('knp_paginator')->paginate(
             $listes_mail,
             $request->query->get('page', 1)/*page number*/,
-            10/*limit per page*/
+            1000/*limit per page*/
         );
 
 
         return $this->render('mail/liste.html.twig', array(
             'mails' => $mails,
+            'etat'  => $etat,
         ));
     }
 
@@ -127,12 +129,12 @@ class MailController extends Controller
      */
     public function showAction(Request $request, Mail $mail)
     {
-            $deleteForm = $this->createDeleteForm($mail);
+        $deleteForm = $this->createDeleteForm($mail);
         $showForm = $this->createForm('PPCA\SiseBundle\Form\MailType', $mail);
-    $showForm->handleRequest($request);
+        $showForm->handleRequest($request);
 
 
-    return $this->render('mail/show.html.twig', array(
+        return $this->render('mail/show.html.twig', array(
             'mail' => $mail,
             'show_form' => $showForm->createView(),
                 'delete_form' => $deleteForm->createView(),
@@ -167,16 +169,33 @@ class MailController extends Controller
 
     public function followAction(Request $request, Mail $mail)
     {
-        $followForm = $this->createForm('PPCA\SiseBundle\Form\MailType', array(
+        $followForm = $this->createForm('PPCA\SiseBundle\Form\FollowType', array(
             'action' => $this->generateUrl('admin_sise_mail_follow', array('id' => $mail->getId())),
             'method' => 'POST',
         ));
         $followForm->handleRequest($request);
 
         if ($followForm->isSubmitted() && $followForm->isValid()) {
+
+            $em = $this->getDoctrine()->getManager();
+
+            $mail->setDano($dano);
+            $em->persist($mail);
+
+            //Mise à jour de l'état de la dano
+            $dano->setEtat($em->getRepository('SiseBundle:Etat')->find(1));
+            $em->persist($dano);
+
+            // Création de la ligne d'historique
+            $historique = new HistoriqueDano();
+            $historique->setEtat($em->getRepository('SiseBundle:Etat')->find());
+            $historique->setDano($dano);
+
+            $em->persist($historique);
+
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('admin_sise_mail_index');
+            return $this->redirectToRoute('admin_sise_mail_retour_bailleur');
         }
 
         return $this->render('mail/follow.html.twig', array(
