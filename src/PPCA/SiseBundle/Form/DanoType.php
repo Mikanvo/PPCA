@@ -24,7 +24,6 @@ class DanoType extends AbstractType
             ->add('objet',TextType::class,array('label'=>'Objet'))
             ->add('corps',TextareaType::class,array('label'=>'Message'))
             ->add('description',TextareaType::class,array('label'=>'Description de la requête'))
-            ->add('observation',TextareaType::class,array('label'=>'Observations'))
             ->add('beneficiaire',TextType::class,array('label'=>'Beneficiaire'))
             ->add('observationPTBA',TextareaType::class,array('label'=>'Observation PTBA'))
             ->add('observationPPM',TextareaType::class,array('label'=>'Observation PPM'))

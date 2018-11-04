@@ -34,13 +34,7 @@
 <table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
     <thead>
     <tr>
-        <th>
-            <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
-                <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes" />
-                <span></span>
-            </label>
-        </th>
-        <th> Date </th>
+        <th> Date réception </th>
         <th> Expediteur </th>
         <th> Objet </th>
         {#<th> Contenu </th>#}
@@ -50,19 +44,13 @@
     <tbody>
     {% for mail in mails %}
         <tr class="odd gradeX">
-            <td>
-                <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
-                    <input type="checkbox" class="checkboxes" value="1" />
-                    <span></span>
-                </label>
-            </td>
             <td> {{ mail.date|date('d/m/Y') }} </td>
             <td> {{ mail.expediteur }} </td>
             <td> {{ mail.objet }} </td>
             {#<td> {{ mail.corps }} </td>#}
             <td>
                 <div class="btn-group">
-                    {{ render(controller('SiseBundle:Dano:new', { 'id': mail.id })) }}
+                    {{ render(controller('SiseBundle:Dano:new', {'mail': mail.id, 'origine': 'mail'})) }}
                     {{ render(controller('SiseBundle:Mail:follow', { 'id': mail.id })) }}
                 </div>
             </td>

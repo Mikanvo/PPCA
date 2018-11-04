@@ -113,7 +113,13 @@
 }
 
 .modal-header{
-    background-color: #32c5d2;
+    background-color: #3598dc;
+}
+
+.modal-title{
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .form-group .required {

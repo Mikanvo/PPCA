@@ -11,7 +11,7 @@ use APY\DataGridBundle\Grid\Mapping as GRID;
  *
  * @ORM\Table(name="composante")
  * @ORM\Entity(repositoryClass="PPCA\ParametreBundle\Repository\ComposanteRepository")
- * @GRID\Source(columns="id, libelle")
+ * @GRID\Source(columns="id, code, libelle")
  */
 class Composante
 {
@@ -29,11 +29,19 @@ class Composante
      * @var string
      * @Assert\NotBlank()
      *
-     * @ORM\Column(name="libelle", type="string", length=50)
+     * @ORM\Column(name="code", type="string", length=10)
+     * @GRID\Column(name="code", title="code")
+     */
+    private $code;
+
+    /**
+     * @var string
+     * @Assert\NotBlank()
+     *
+     * @ORM\Column(name="libelle", type="string", length=255)
      * @GRID\Column(name="libelle", title="Libellé")
      */
     private $libelle;
-
 
     /**
      * Get id
@@ -67,5 +75,29 @@ class Composante
     public function getLibelle()
     {
         return $this->libelle;
+    }
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     *
+     * @return Composante
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->code;
     }
 }

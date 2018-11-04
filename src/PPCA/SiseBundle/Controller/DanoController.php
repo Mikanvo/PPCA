@@ -87,6 +87,7 @@ class DanoController extends Controller
     public function newAction(Request $request, Mail $mail = null, $origine = 'sample')
     {
         $dano = new Dano();
+        $dano->setNumero($this->numero());
         $form = $this->createForm('PPCA\SiseBundle\Form\DanoType', $dano, array(
                 'action' => $this->generateUrl('admin_sise_dano_new'),
                 'method' => 'POST',
@@ -257,5 +258,19 @@ class DanoController extends Controller
             'dano' => $dano,
             'mail_form' => $mailForm->createView(),
         ));
+    }
+
+    private function numero()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $query = $em->createQueryBuilder();
+        $query->select("MAX(a.numero) as ref")
+                ->from("SiseBundle:Dano",'a');
+
+        $nb = $query->getQuery()->getResult();
+
+        return ((int)($nb[0]["ref"])+1);
+
     }
 }

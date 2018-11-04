@@ -12,7 +12,7 @@ use APY\DataGridBundle\Grid\Mapping as GRID;
  *
  * @ORM\Table(name="sous_activite")
  * @ORM\Entity(repositoryClass="PPCA\ParametreBundle\Repository\SousActiviteRepository")
- * @GRID\Source(columns="id, libelle, activite.libelle")
+ * @GRID\Source(columns="id, code, libelle, activite.code")
  */
 class SousActivite
 {
@@ -28,9 +28,18 @@ class SousActivite
 
     /**
      * @var string
+     * @Assert\NotBlank()
+     *
+     * @ORM\Column(name="code", type="string", length=10)
+     * @GRID\Column(name="code", title="code")
+     */
+    private $code;
+
+    /**
+     * @var string
      *
      * @Assert\NotBlank()
-     * @ORM\Column(name="libelle", type="string", length=50)
+     * @ORM\Column(name="libelle", type="string", length=255)
      */
     private $libelle;
 
@@ -99,5 +108,29 @@ class SousActivite
     public function getActivite()
     {
         return $this->activite;
+    }
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     *
+     * @return SousActivite
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->code;
     }
 }

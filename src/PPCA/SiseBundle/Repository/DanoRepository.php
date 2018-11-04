@@ -10,4 +10,5 @@ namespace PPCA\SiseBundle\Repository;
  */
 class DanoRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }
